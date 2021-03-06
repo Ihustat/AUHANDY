@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/hamburgers.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -19,7 +20,15 @@
             <div class="header__logo">
                 <img src="images/Logo.png" alt="">
             </div>
-                                                         
+            <div class="hamburger hamburger--spin">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+              </div>
+            <!-- <div class="header-burger ">
+                <span></span>
+            </div>   -->
+                                
             <nav class="header__menu">
                 <ul class="header__list">
                     <li><a href="#">    Home </a></li>
@@ -31,11 +40,15 @@
                 </ul>
             </nav>
             <div class="header__search ">
-
+                <form>
+                    <input class="header__search-input" type="text" placeholder="search">
+                    <button class="header__search-button"  type="submit"></button>
+                </form>
             </div>
         </div>
     </div>
 </header>
+
 <section class="expert" >
     <div class="expert__wrapper">
         <div class="container">
@@ -116,6 +129,138 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+<section class="counter">
+    <div class="counter__wrapper">
+    <div class="container">
+        <div class="counter__inner">
+            <div class="counter__item">
+                <div class="counter__item-icon icon-clock-o">
+                
+                </div>
+<div class=" counter__item-number">
+12
+</div>
+<div class="counter__item-title">
+    Years Of Experience
+</div>
+            </div>
+            <div class="counter__item">
+                <div class="counter__item-icon icon-rocket">
+                
+                </div>
+<div class="counter__item-number">
+500
+</div>
+<div class="counter__item-title">
+    Completed Projects
+</div>
+            </div>
+            <div class="counter__item">
+                <div class="counter__item-icon icon-heart-o">
+                
+                </div>
+<div class="counter__item-number">
+1500
+</div>
+<div class="counter__item-title">
+    Happy Customers
+</div>
+            </div>
+            <div class="counter__item">
+                <div class="counter__item-icon icon-medal">
+                
+                </div>
+<div class="counter__item-number">
+20
+</div>
+<div class="counter__item-title">
+    Awards Won
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<section class="projects">
+    <div class="container">
+        <div class="projects__inner">
+            <div class="projects__title title">
+                Our Projects
+            </div>
+                                                
+            <div class="projects__buttons">
+                <button class="projects__button" type="button" data-filter="all">All</button>
+                <button class="projects__button" type="button" data-filter=".engine-repair">Engine Repair</button>
+                <button class="projects__button" type="button" data-filter=".electrical">Electrical</button>
+                <button class="projects__button" type="button" data-filter=".plumbing">Plumbing</button>
+                <button class="projects__button" type="button" data-filter=".repair-house">Repair House   </button>
+                <button class="projects__button" type="button" data-filter=".wall-paint"> Wall Paint</button>
+            </div>
+        <div class="projects__items">
+                <div class=" projects__item mix repair-house all" data-order="1">
+                    <div class="projects__item--hover">
+                        <div class="projects__item-title">
+                         Pellentesque finibus maximus.
+                        </div>
+                        <div class="projects__item-text">
+                         Repair House
+                        </div>
+                    </div>
+                    <img src="images/projects/item-1.jpg" alt=""></div>
+                <div class=" projects__item mix  wall-paint all" data-order="1">
+                    <div class="projects__item--hover">
+                        <div class="projects__item-title">
+                         Pellentesque finibus maximus.
+                        </div>
+                        <div class="projects__item-text">
+                         Repair House
+                        </div>
+                    </div><img src="images/projects/item-2.jpg" alt=""></div>
+                <div class=" projects__item mix  plumbing all" data-order="1">
+                    <div class="projects__item--hover">
+                        <div class="projects__item-title">
+                         Pellentesque finibus maximus.
+                        </div>
+                        <div class="projects__item-text">
+                         Repair House
+                        </div>
+                    </div><img src="images/projects/item-3.jpg" alt=""></div>
+                <div class=" projects__item mix  electrical all" data-order="1">
+                    <div class="projects__item--hover">
+                        <div class="projects__item-title">
+                         Pellentesque finibus maximus.
+                        </div>
+                        <div class="projects__item-text">
+                         Repair House
+                        </div>
+                    </div><img src="images/projects/item-4.jpg" alt=""></div>
+                <div class=" projects__item mix  repair-house all" data-order="1">
+                    <div class="projects__item--hover">
+                        <div class="projects__item-title">
+                         Pellentesque finibus maximus.
+                        </div>
+                        <div class="projects__item-text">
+                         Repair House
+                        </div>
+                    </div><img src="images/projects/item-5.jpg" alt=""></div>
+                <div class=" projects__item mix  engine-repair all" data-order="1">
+                    <div class="projects__item--hover">
+                        <div class="projects__item-title">
+                         Pellentesque finibus maximus.
+                        </div>
+                        <div class="projects__item-text">
+                         Repair House
+                        </div>
+                    </div><img src="images/projects/item-6.jpg" alt=""></div>
+       
+        </div>
+      
+            <a class="projects__link" href="#">All Projects</a>
+        
         </div>
     </div>
 </section>
@@ -217,99 +362,6 @@
         </div>
     </div>
 </section>
-<section class="projects">
-    <div class="container">
-        <div class="projects__inner">
-            <div class="projects__title title">
-                Our Projects
-            </div>
-                                                
-            <div class="projects__buttons">
-                <button class="projects__button" type="button" data-filter="all">All</button>
-                <button class="projects__button" type="button" data-filter=".engine-repair">Engine Repair</button>
-                <button class="projects__button" type="button" data-filter=".electrical">Electrical</button>
-                <button class="projects__button" type="button" data-filter=".plumbing">Plumbing</button>
-                <button class="projects__button" type="button" data-filter=".repair-house">Repair House   </button>
-                <button class="projects__button" type="button" data-filter=".wall-paint"> Wall Paint</button>
-            </div>
-        <div class="projects__items">
-                <div class=" projects__item mix repair-house all" data-order="1">
-                    <div class="projects__item--hover">
-                        <div class="projects__item-title">
-                         Pellentesque finibus maximus.
-                        </div>
-                        <div class="projects__item-text">
-                         Repair House
-                        </div>
-                    </div>
-                    <img src="images/projects/item-1.jpg" alt=""></div>
-                <div class=" projects__item mix  wall-paint all" data-order="1">
-                    <div class="projects__item--hover">
-                        <div class="projects__item-title">
-                         Pellentesque finibus maximus.
-                        </div>
-                        <div class="projects__item-text">
-                         Repair House
-                        </div>
-                    </div><img src="images/projects/item-2.jpg" alt=""></div>
-                <div class=" projects__item mix  plumbing all" data-order="1">
-                    <div class="projects__item--hover">
-                        <div class="projects__item-title">
-                         Pellentesque finibus maximus.
-                        </div>
-                        <div class="projects__item-text">
-                         Repair House
-                        </div>
-                    </div><img src="images/projects/item-3.jpg" alt=""></div>
-                <div class=" projects__item mix  electrical all" data-order="1">
-                    <div class="projects__item--hover">
-                        <div class="projects__item-title">
-                         Pellentesque finibus maximus.
-                        </div>
-                        <div class="projects__item-text">
-                         Repair House
-                        </div>
-                    </div><img src="images/projects/item-4.jpg" alt=""></div>
-                <div class=" projects__item mix  repair-house all" data-order="1">
-                    <div class="projects__item--hover">
-                        <div class="projects__item-title">
-                         Pellentesque finibus maximus.
-                        </div>
-                        <div class="projects__item-text">
-                         Repair House
-                        </div>
-                    </div><img src="images/projects/item-5.jpg" alt=""></div>
-                <div class=" projects__item mix  engine-repair all" data-order="1">
-                    <div class="projects__item--hover">
-                        <div class="projects__item-title">
-                         Pellentesque finibus maximus.
-                        </div>
-                        <div class="projects__item-text">
-                         Repair House
-                        </div>
-                    </div><img src="images/projects/item-6.jpg" alt=""></div>
-       
-        </div>
-      
-            <a class="projects__link" href="#">All Projects</a>
-        
-        </div>
-    </div>
-</section>
-<section class="call">
-   <div class="call__wrapper">
-       <div class="container">
-           <div class="call__inner">
-      <div class="call__content">
-                <call class="call__title">
-                    You have some  problems in housing?
-                </call>
-                <a href="tel:1235678596" class="call__link">+1 23 567 8596</a>
-      </div>
-           </div>
-       </div>
-   </div>
-</section>
 <section class="contacts">
     <div class="container">
         <div class="contacts__inner">
@@ -341,6 +393,7 @@
         </div>
     </div>
 </section>
+
      </div> 
      <div class="footer">
     
@@ -403,7 +456,7 @@
             </div>
         </div>
             <div class="footer__bottom">
-                <div class="container">Copyright © 2018 <span>Auhandy.</span> Get The Theme</div>
+                <div class="container"><div class="footer__bottom-text">Copyright © 2018 <span>Auhandy.</span> Get The Theme</div></div>
             </div>
     
           

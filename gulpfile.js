@@ -44,6 +44,9 @@ function scripts() {
         'node_modules/wow.js/dist/wow.js',
         'node_modules/slick-carousel/slick/slick.js',
         'node_modules/mixitup/dist/mixitup.js',
+        'node_modules/counter/jquery.spincrement.js',
+        
+       
         'app/js/main.js',
 
     ])
