@@ -198,6 +198,21 @@ background-position: center;
             height: 60px;
             background-color: $blue;
         }
+        &-buble{
+            &::before{
+                content: "\f075";
+            }
+        }
+        &-gift{
+            &::before{
+                content: "\f06b";
+            }
+        }
+        &-heart{
+            &::before{
+                content: "\f004";
+            }
+        }
         &-title{
             font-weight: 700;
             margin-bottom: 15px;
@@ -240,10 +255,10 @@ background-position: center;
     }
 }
 &-img{
+    margin-bottom: 27px;
     &::before{
-        font-size: 45px;
+        font-size: 60px;
         color: #fff;
-        margin-bottom: 27px;
     }
 }
 &-title{
@@ -273,7 +288,8 @@ cursor: pointer;
 .slick-prev{
     left: -55px;
 }
-.services__btn{
+.services__btn,
+.projects__link{
     background-color: $yellow;
     font-weight: 700;
     font-size: 15px;
@@ -284,4 +300,327 @@ cursor: pointer;
     text-transform: uppercase;
 }
 // end services
+// start projects
+.projects{
+padding: 79px 0 98px;
+text-align: center;
+&__title{
+    margin-bottom: 40px;
+    &::before{
+        left: 50%;
+        transform: translateX(-50%)
+    }
+}
+&__buttons{
+    margin-bottom: 36px;
+}
+&__button{
+    font-weight: 700;
+    font-size: 15px;
+    background-color: transparent;
+    border: none;
+    color: $text;
+    cursor: pointer;
+    outline: none;
+    transition: all .3s;
+    &+&{
+        margin-left: 23px;
+    }
+}
+&__items{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 65px;
+}
+
+}
+.projects__button.mixitup-control-active{
+    color: $yellow;
+}
+.projects__item{
+  margin-top: -7px;
+    width: 390px;
+    height: 292px;
+   position: relative;
+   overflow: hidden;
+   &:hover{
+       .projects__item--hover{
+     
+        top: 0;
+    }
+   }
+   &-title{
+       color: $yellow;
+       font-weight: 700;
+       font-size: 20px;
+       margin-bottom: 9px;
+   }
+   &-text{
+       color: #fff;
+       position: relative;
+       &::before{
+           content: "\f002";
+           position: absolute;
+           bottom: -50px;
+           left: 50%;
+           font-family: 'icomoon';
+           transform: translateY(-50%);
+           font-size: 18px;
+           color: #fff;
+       }
+   }
+}
+.projects__item--hover{
+    transition: all .4s;
+    top: -300px;
+  left: 0;
+    position: absolute;
+    width: 390px;
+    height: 292px;
+    background-color: rgba($blue, .9);
+    padding: 103px 15px 0;
+}
+.projects__link{
+    width: 168px;
+}
+// end projects
+// start call
+.call{
+    background-image: url(../images/call-bg.jpg);
+    height: 580px;
+    background-size: cover;
+    background-position: center center;
+   
+    &__wrapper{
+        background-color: rgba( #000000,  .7);
+        height: 580px;
+    }
+    &__inner{
+       
+
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            background-image: url(../images/call-man.png);
+            background-size: cover;
+            background-position: top center;
+            right: 25px;
+            top: 33px;
+            width: 492px;
+            height: 547px;
+        }
+    }
+    &__content{
+        max-width: 560px;
+        padding-top: 184px;
+    }
+    &__title{
+       
+        color: #fff;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 52px;
+        text-transform: uppercase;
+    }
+    &__link{
+        margin-top: 40px;
+        display: block;
+        background-color: $yellow;
+        width: 260px;
+        padding: 10px;
+        padding-left: 30px;
+        text-align: center;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 700;
+        position: relative;
+        &::before{
+            content: "\f10b";
+position: absolute;
+font-family: 'icomoon';
+color: #fff;
+left: 22px;
+font-size: 25px;
+        }
+    }
+}
+// end call
+// start contacts
+.contacts{
+    background-image: url(../images/contacts-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 696px;
+    &__inner{
+       padding: 74px 0 90px;
+       display: flex;
+       justify-content: space-between;
+    }
+&__location{
+    &-title{
+        margin-bottom: 50px;
+}
+&-map{
+    width: 466px;
+    height: 416px;
+    border: 4px solid #fff;
+}
+}
+
+
+
+    &__quote{
+        max-width: 639px;
+        &-title{
+            margin-bottom: 50px;
+        }
+      &-input{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          input{
+              width: 310px;
+              margin-bottom: 20px;
+              height: 50px;
+              padding: 0 20px;
+              border: none;
+              &::placeholder{
+                font-family: 'Lato', sans-serif;
+                  font-size: 15px;
+                  font-weight: 500;
+                  color: $text;
+              }
+          }
+      }
+        textarea{
+            height: 150px;
+            width: 100%;
+            resize: none;
+            padding: 20px;
+            margin-bottom: 35px;
+            &::placeholder{
+                font-family: 'Lato', sans-serif;
+                  font-size: 15px;
+                  font-weight: 500;
+                  color: $text;
+              }
+        }
+        button{
+            background-color: $yellow;
+            font-weight: 700;
+            font-size: 15px;
+            width: 140px;
+            text-align: center;
+            padding: 13px 10px;
+            color: #fff;
+            text-transform: uppercase;
+            cursor: pointer;
+            border: none;
+            outline: none;
+        }
+    }
+}
+// end contacts
+// start footer
+.footer{
+    &__top{
+background-color: #1a1a1a;
+&-inner{
+    padding: 58px 0 75px;
+    display: flex;
+    justify-content: space-between;
+}
+}
+&__title{
+    margin-bottom: 27px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #cccccc;
+    text-transform: uppercase;
+}
+    &__bottom{
+        text-align: center;
+        background-color: #0d0d0d;
+        height: 60px;
+        color: $text;
+        display: flex;
+        align-items: center;
+        span{
+            color: $yellow;
+        }
+    }
+}
+.footer__contact-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 350px;
+}
+.footer__contact-text{
+    font-size: 15px;
+    color: #999999;
+    span{
+        display: block;
+        color: #cccccc;
+       
+    }
+}
+.footer__contact-icon{
+    margin-right: 15px;
+    &::before{
+        font-family: 'icomoon';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        color: $yellow;
+        background-color: #252525;
+        border-radius: 50%;
+    }
+}
+.footer__services{
+    width: 350px;
+    &-list{
+        columns: 2;
+        li{
+            margin-right: 48px;
+            padding-left: 20px;
+           margin-bottom: 12px;
+           width: 175px;
+        }
+        a{
+            color: #999999;
+        }
+    }
+}
+.footer__cupon{
+    max-width: 370px;
+    width: 100%;
+    text-align: center;
+    height: 220px;
+    color: #999999;
+    border: 1px dashed #404040;
+}
+.cupon__title{
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 22px;
+    span{
+        font-weight: 900;
+        font-size: 55px;
+        color: $yellow;
+        padding: 0 10px;
+    }
+}
+.cupon__code{
+    margin-top: 56px;
+    margin-bottom: 25px;
+    span{
+        color: $yellow;
+    }
+}
+// end footer
 @import 'media';

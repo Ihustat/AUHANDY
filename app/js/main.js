@@ -8,3 +8,9 @@ $(function(){
       });
 
 });
+
+
+
+
+
+var mixer = mixitup('.projects__items');
