@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/hamburgers.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div class="wrapper">
+     <div class="content">
+
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo">
+                <img src="images/Logo.png" alt="">
+            </div>
+            <div class="hamburger hamburger--spin">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+              </div>
+            <!-- <div class="header-burger ">
+                <span></span>
+            </div>   -->
+                                
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li><a href="#">    Home </a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header__search ">
+                <form>
+                    <input class="header__search-input" type="text" placeholder="search">
+                    <button class="header__search-button"  type="submit"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="breadcrumbs " style=" background-image: url(images/breadcrumbs-engine.jpg);">
+
+  <div class="breadcrumbs__wrapper">
+        <div class="breadcrumbs__title">Services</div>
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a href="#">Home </a> </li>
+                <li class="breadcrumbs__item">Services</li>
+            </ul>
+           
+        </div>
+      
+  </div>
+<section class="services">
+    <div class="container">
+        <div class="services__inner">
+            <div class="services__aside">
+             <div class="services__tabs">
+                    <div class="tab services__tab">
+                        <button class="tablinks services__tablinks " id="defaultOpen" onclick="openCity(event, 'engine')">Engine Repair</button>
+                        <button class="tablinks services__tablinks electrical " onclick="openCity(event, 'electrical')">Electrical</button>
+                        <button class="tablinks services__tablinks plumbing" onclick="openCity(event, 'plumbing')">Plumbing</button>
+                        <button class="tablinks services__tablinks wallPaint" onclick="openCity(event, 'wallPaint')">Wall Paint</button>
+                        <button class="tablinks services__tablinks home " onclick="openCity(event, 'home')">Home Maintenance</button>
+                        <button class="tablinks services__tablinks  unatallation" onclick="openCity(event, 'installation')">Installation</button>
+                        <button class="tablinks services__tablinks garden" onclick="openCity(event, 'garden')">Garden Repair</button>
+                      </div>
+             </div>
+<div class="services__ads">
+    <div class="services__ads-title">
+        Your Ads
+    </div>
+</div>
+<div class="services__contact" >
+    <div class="services__contact-title">
+        Contact Us
+    </div>
+    <div class="services__contact-item icon-map-marker">
+        Auhandy Tower, New York, NY 10013, USA
+    </div>
+    <div class="services__contact-item icon-mobile-phone">
+        (+1) 23 567 8596
+    </div>
+    <div class="services__contact-item icon-envelope-o">
+        info@example.com
+    </div>
+    <div class="services__contact-item icon-clock-o">
+        Weekdays: 9:00am - 6:00pm
+       <span> Sat - Sun : 10:00am - 5:00pm</span>
+    </div>
+</div>
+            </div>
+            <div class="services__body">
+                <div id="engine" class="tabcontent">
+              <div class="services__body-content">
+                       <div class="services__body-img">
+                           <img src="images/engine-bg.jpg" alt="">
+                       </div>
+                       <div class="services__body-title">
+                        Pellentesque efficitur risus vel libero.
+                       </div>
+                       <div class="services__body-text">
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras vitae pharetra massa. Praesent sed nunc tortor. Proin sed sem pellentesque, aliquet dui eu, aliquet nunc. Etiam ac elit eu libes pharetra sit amet vel nibh. Integer metus augue, fermentum eu est in, porttitor tincidunt arcu. Curabitur cursus pellente q blandit. Suspendisse placerat sit amet diam at facilisis. In eleifend ligula non odio pulvinar congue. Rivamus tinc ac eleif mollis. Nulla placerat, sem id bibendum faucibus, ante metus porta nisl, non pretium odio quam sed magna. In molestie vel odio nec faucibus. Integer viverra non risus ut viverra. Sed egestas at ipsum a consequat.
+                       </div>
+                       <div class="services__body-title">
+                        Sed the feugiat enim tincidunt.
+                    </div>
+                    <div class="services__body-text">
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras vitae pharetra massa. Praesent sed nunc tortor. Proin sed sem pellentesque, aliquet dui eu, aliquet nunc. Etiam ac elit eu libes pharetra sit amet vel nibh. Integer metus augue, fermentum eu est in, porttitor tincidunt arcu.
+                    </div>
+              </div>
+              <div class="services__body-title services__gallery-title">
+                Gallery 
+              </div>
+              <div class="services__body-gallery">
+                  <div class="services__gallery-images">
+                      <img src="images/services-gallery1.jpg" alt="">
+                      <a href="images/services-gallery1.jpg " data-fancybox="images"class="services__gallery-images--hover icon-arrows"> </a >
+                    </div>
+                    <div class="services__gallery-images">
+                        <img src="images/services-gallery2.jpg" alt="">
+                        <a href="images/services-gallery2.jpg " data-fancybox="images"class="services__gallery-images--hover icon-arrows"> </a >
+                      </div>
+                      <div class="services__gallery-images">
+                        <img src="images/services-gallery3.jpg" alt="">
+                        <a href="images/services-gallery3.jpg " data-fancybox="images"class="services__gallery-images--hover icon-arrows"> </a >
+                      </div>
+                  
+              </div>
+                  </div>
+                  <div id="electrical" class="tabcontent">
+                    <div class="services__body-content">
+                             <div class="services__body-img">
+                                 <img src="images/elictrical-bg.jpg" alt="">
+                             </div>
+                             <div class="services__body-title">
+                              Pellentesque efficitur risus vel libero.
+                             </div>
+                             <div class="services__body-text">
+                              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras vitae pharetra massa. Praesent sed nunc tortor. Proin sed sem pellentesque, aliquet dui eu, aliquet nunc. Etiam ac elit eu libes pharetra sit amet vel nibh. Integer metus augue, fermentum eu est in, porttitor tincidunt arcu. Curabitur cursus pellente q blandit. Suspendisse placerat sit amet diam at facilisis. In eleifend ligula non odio pulvinar congue. Rivamus tinc ac eleif mollis. Nulla placerat, sem id bibendum faucibus, ante metus porta nisl, non pretium odio quam sed magna. In molestie vel odio nec faucibus. Integer viverra non risus ut viverra. Sed egestas at ipsum a consequat.
+                             </div>
+                             <div class="services__body-title">
+                              Sed the feugiat enim tincidunt.
+                          </div>
+                          <div class="services__body-text">
+                              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras vitae pharetra massa. Praesent sed nunc tortor. Proin sed sem pellentesque, aliquet dui eu, aliquet nunc. Etiam ac elit eu libes pharetra sit amet vel nibh. Integer metus augue, fermentum eu est in, porttitor tincidunt arcu.
+                          </div>
+                    </div>
+                    <div class="services__body-title services__gallery-title">
+                      Gallery 
+                    </div>
+                    <div class="services__body-gallery">
+                        <div class="services__gallery-images">
+                            <img src="images/services-gallery1.jpg" alt="">
+                            <a href="images/services-gallery1.jpg " data-fancybox="images"class="services__gallery-images--hover icon-arrows"> </a >
+                          </div>
+                          <div class="services__gallery-images">
+                              <img src="images/services-gallery2.jpg" alt="">
+                              <a href="images/services-gallery2.jpg " data-fancybox="images"class="services__gallery-images--hover icon-arrows"> </a >
+                            </div>
+                            <div class="services__gallery-images">
+                              <img src="images/services-gallery3.jpg" alt="">
+                              <a href="images/services-gallery3.jpg " data-fancybox="images"class="services__gallery-images--hover icon-arrows"> </a >
+                            </div>
+                        
+                    </div>
+                        </div>
+                        <div id="plumbing" class="tabcontent">
+                            <div class="services__body-content">
+                                     <div class="services__body-img">
+                                         <img src="images/elictrical-bg.jpg" alt="">
+                                     </div>
+                                     <div class="services__body-title">
+                                      Pellentesque efficitur risus vel libero.
+                                     </div>
+                                     <div class="services__body-text">
+                                      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras vitae pharetra massa. Praesent sed nunc tortor. Proin sed sem pellentesque, aliquet dui eu, aliquet nunc. Etiam ac elit eu libes pharetra sit amet vel nibh. Integer metus augue, fermentum eu est in, porttitor tincidunt arcu. Curabitur cursus pellente q blandit. Suspendisse placerat sit amet diam at facilisis. In eleifend ligula non odio pulvinar congue. Rivamus tinc ac eleif mollis. Nulla placerat, sem id bibendum faucibus, ante metus porta nisl, non pretium odio quam sed magna. In molestie vel odio nec faucibus. Integer viverra non risus ut viverra. Sed egestas at ipsum a consequat.
+                                     </div>
+                                     <div class="services__body-title">
+                                      Sed the feugiat enim tincidunt.
+                                  </div>
+                                  <div class="services__body-text">
+                                      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras vitae pharetra massa. Praesent sed nunc tortor. Proin sed sem pellentesque, aliquet dui eu, aliquet nunc. Etiam ac elit eu libes pharetra sit amet vel nibh. Integer metus augue, fermentum eu est in, porttitor tincidunt arcu.
+                                  </div>
+                            </div>
+                            <div class="services__body-title services__gallery-title">
+                              Gallery 
+                            </div>
+                            <div class="services__body-gallery">
+                                <div class="services__gallery-images">
+                                    <img src="images/services-gallery1.jpg" alt="">
+                                    <a href="images/services-gallery1.jpg " data-fancybox="images"class="services__gallery-images--hover icon-arrows"> </a >
+                                  </div>
+                                  <div class="services__gallery-images">
+                                      <img src="images/services-gallery2.jpg" alt="">
+                                      <a href="images/services-gallery2.jpg " data-fancybox="images"class="services__gallery-images--hover icon-arrows"> </a >
+                                    </div>
+                                    <div class="services__gallery-images">
+                                      <img src="images/services-gallery3.jpg" alt="">
+                                      <a href="images/services-gallery3.jpg " data-fancybox="images"class="services__gallery-images--hover icon-arrows"> </a >
+                                    </div>
+                                
+                            </div>
+                                </div>
+                                <div id="wallPaint" class="tabcontent">
+                                    <div class="services__body-content">
+                                             <div class="services__body-img">
+                                                 <img src="images/elictrical-bg.jpg" alt="">
+                                             </div>
+                                             <div class="services__body-title">
+                                              Pellentesque efficitur risus vel libero.
+                                             </div>
+                                             <div class="services__body-text">
+                                              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras vitae pharetra massa. Praesent sed nunc tortor. Proin sed sem pellentesque, aliquet dui eu, aliquet nunc. Etiam ac elit eu libes pharetra sit amet vel nibh. Integer metus augue, fermentum eu est in, porttitor tincidunt arcu. Curabitur cursus pellente q blandit. Suspendisse placerat sit amet diam at facilisis. In eleifend ligula non odio pulvinar congue. Rivamus tinc ac eleif mollis. Nulla placerat, sem id bibendum faucibus, ante metus porta nisl, non pretium odio quam sed magna. In molestie vel odio nec faucibus. Integer viverra non risus ut viverra. Sed egestas at ipsum a consequat.
+                                             </div>
+                                             <div class="services__body-title">
+                                              Sed the feugiat enim tincidunt.
+                                          </div>
+                                          <div class="services__body-text">
+                                              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras vitae pharetra massa. Praesent sed nunc tortor. Proin sed sem pellentesque, aliquet dui eu, aliquet nunc. Etiam ac elit eu libes pharetra sit amet vel nibh. Integer metus augue, fermentum eu est in, porttitor tincidunt arcu.
+                                          </div>
+                                    </div>
+                                    <div class="services__body-title services__gallery-title">
+                                      Gallery 
+                                    </div>
+                                    <div class="services__body-gallery">
+                                        <div class="services__gallery-images">
+                                            <img src="images/services-gallery1.jpg" alt="">
+                                            <a href="images/services-gallery1.jpg " data-fancybox="images"class="services__gallery-images--hover icon-arrows"> </a >
+                                          </div>
+                                          <div class="services__gallery-images">
+                                              <img src="images/services-gallery2.jpg" alt="">
+                                              <a href="images/services-gallery2.jpg " data-fancybox="images"class="services__gallery-images--hover icon-arrows"> </a >
+                                            </div>
+                                            <div class="services__gallery-images">
+                                              <img src="images/services-gallery3.jpg" alt="">
+                                              <a href="images/services-gallery3.jpg " data-fancybox="images"class="services__gallery-images--hover icon-arrows"> </a >
+                                            </div>
+                                        
+                                    </div>
+                                        </div>
+                                        <div id="home" class="tabcontent">
+                                            <div class="services__body-content">
+                                                     <div class="services__body-img">
+                                                         <img src="images/elictrical-bg.jpg" alt="">
+                                                     </div>
+                                                     <div class="services__body-title">
+                                                      Pellentesque efficitur risus vel libero.
+                                                     </div>
+                                                     <div class="services__body-text">
+                                                      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras vitae pharetra massa. Praesent sed nunc tortor. Proin sed sem pellentesque, aliquet dui eu, aliquet nunc. Etiam ac elit eu libes pharetra sit amet vel nibh. Integer metus augue, fermentum eu est in, porttitor tincidunt arcu. Curabitur cursus pellente q blandit. Suspendisse placerat sit amet diam at facilisis. In eleifend ligula non odio pulvinar congue. Rivamus tinc ac eleif mollis. Nulla placerat, sem id bibendum faucibus, ante metus porta nisl, non pretium odio quam sed magna. In molestie vel odio nec faucibus. Integer viverra non risus ut viverra. Sed egestas at ipsum a consequat.
+                                                     </div>
+                                                     <div class="services__body-title">
+                                                      Sed the feugiat enim tincidunt.
+                                                  </div>
+                                                  <div class="services__body-text">
+                                                      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras vitae pharetra massa. Praesent sed nunc tortor. Proin sed sem pellentesque, aliquet dui eu, aliquet nunc. Etiam ac elit eu libes pharetra sit amet vel nibh. Integer metus augue, fermentum eu est in, porttitor tincidunt arcu.
+                                                  </div>
+                                            </div>
+                                            <div class="services__body-title services__gallery-title">
+                                              Gallery 
+                                            </div>
+                                            <div class="services__body-gallery">
+                                                <div class="services__gallery-images">
+                                                    <img src="images/services-gallery1.jpg" alt="">
+                                                    <a href="images/services-gallery1.jpg " data-fancybox="images"class="services__gallery-images--hover icon-arrows"> </a >
+                                                  </div>
+                                                  <div class="services__gallery-images">
+                                                      <img src="images/services-gallery2.jpg" alt="">
+                                                      <a href="images/services-gallery2.jpg " data-fancybox="images"class="services__gallery-images--hover icon-arrows"> </a >
+                                                    </div>
+                                                    <div class="services__gallery-images">
+                                                      <img src="images/services-gallery3.jpg" alt="">
+                                                      <a href="images/services-gallery3.jpg " data-fancybox="images"class="services__gallery-images--hover icon-arrows"> </a >
+                                                    </div>
+                                                
+                                            </div>
+                                                </div>
+                                                <div id="installation" class="tabcontent">
+                                                    <div class="services__body-content">
+                                                             <div class="services__body-img">
+                                                                 <img src="images/elictrical-bg.jpg" alt="">
+                                                             </div>
+                                                             <div class="services__body-title">
+                                                              Pellentesque efficitur risus vel libero.
+                                                             </div>
+                                                             <div class="services__body-text">
+                                                              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras vitae pharetra massa. Praesent sed nunc tortor. Proin sed sem pellentesque, aliquet dui eu, aliquet nunc. Etiam ac elit eu libes pharetra sit amet vel nibh. Integer metus augue, fermentum eu est in, porttitor tincidunt arcu. Curabitur cursus pellente q blandit. Suspendisse placerat sit amet diam at facilisis. In eleifend ligula non odio pulvinar congue. Rivamus tinc ac eleif mollis. Nulla placerat, sem id bibendum faucibus, ante metus porta nisl, non pretium odio quam sed magna. In molestie vel odio nec faucibus. Integer viverra non risus ut viverra. Sed egestas at ipsum a consequat.
+                                                             </div>
+                                                             <div class="services__body-title">
+                                                              Sed the feugiat enim tincidunt.
+                                                          </div>
+                                                          <div class="services__body-text">
+                                                              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras vitae pharetra massa. Praesent sed nunc tortor. Proin sed sem pellentesque, aliquet dui eu, aliquet nunc. Etiam ac elit eu libes pharetra sit amet vel nibh. Integer metus augue, fermentum eu est in, porttitor tincidunt arcu.
+                                                          </div>
+                                                    </div>
+                                                    <div class="services__body-title services__gallery-title">
+                                                      Gallery 
+                                                    </div>
+                                                    <div class="services__body-gallery">
+                                                        <div class="services__gallery-images">
+                                                            <img src="images/services-gallery1.jpg" alt="">
+                                                            <a href="images/services-gallery1.jpg " data-fancybox="images"class="services__gallery-images--hover icon-arrows"> </a >
+                                                          </div>
+                                                          <div class="services__gallery-images">
+                                                              <img src="images/services-gallery2.jpg" alt="">
+                                                              <a href="images/services-gallery2.jpg " data-fancybox="images"class="services__gallery-images--hover icon-arrows"> </a >
+                                                            </div>
+                                                            <div class="services__gallery-images">
+                                                              <img src="images/services-gallery3.jpg" alt="">
+                                                              <a href="images/services-gallery3.jpg " data-fancybox="images"class="services__gallery-images--hover icon-arrows"> </a >
+                                                            </div>
+                                                        
+                                                    </div>
+                                                        </div>
+                                                        <div id="garden" class="tabcontent">
+                                                            <div class="services__body-content">
+                                                                     <div class="services__body-img">
+                                                                         <img src="images/elictrical-bg.jpg" alt="">
+                                                                     </div>
+                                                                     <div class="services__body-title">
+                                                                      Pellentesque efficitur risus vel libero.
+                                                                     </div>
+                                                                     <div class="services__body-text">
+                                                                      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras vitae pharetra massa. Praesent sed nunc tortor. Proin sed sem pellentesque, aliquet dui eu, aliquet nunc. Etiam ac elit eu libes pharetra sit amet vel nibh. Integer metus augue, fermentum eu est in, porttitor tincidunt arcu. Curabitur cursus pellente q blandit. Suspendisse placerat sit amet diam at facilisis. In eleifend ligula non odio pulvinar congue. Rivamus tinc ac eleif mollis. Nulla placerat, sem id bibendum faucibus, ante metus porta nisl, non pretium odio quam sed magna. In molestie vel odio nec faucibus. Integer viverra non risus ut viverra. Sed egestas at ipsum a consequat.
+                                                                     </div>
+                                                                     <div class="services__body-title">
+                                                                      Sed the feugiat enim tincidunt.
+                                                                  </div>
+                                                                  <div class="services__body-text">
+                                                                      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras vitae pharetra massa. Praesent sed nunc tortor. Proin sed sem pellentesque, aliquet dui eu, aliquet nunc. Etiam ac elit eu libes pharetra sit amet vel nibh. Integer metus augue, fermentum eu est in, porttitor tincidunt arcu.
+                                                                  </div>
+                                                            </div>
+                                                            <div class="services__body-title services__gallery-title">
+                                                              Gallery 
+                                                            </div>
+                                                            <div class="services__body-gallery">
+                                                                <div class="services__gallery-images">
+                                                                    <img src="images/services-gallery1.jpg" alt="">
+                                                                    <a href="images/services-gallery1.jpg " data-fancybox="images"class="services__gallery-images--hover icon-arrows"> </a >
+                                                                  </div>
+                                                                  <div class="services__gallery-images">
+                                                                      <img src="images/services-gallery2.jpg" alt="">
+                                                                      <a href="images/services-gallery2.jpg " data-fancybox="images"class="services__gallery-images--hover icon-arrows"> </a >
+                                                                    </div>
+                                                                    <div class="services__gallery-images">
+                                                                      <img src="images/services-gallery3.jpg" alt="">
+                                                                      <a href="images/services-gallery3.jpg " data-fancybox="images"class="services__gallery-images--hover icon-arrows"> </a >
+                                                                    </div>
+                                                                
+                                                            </div>
+                                                                </div>
+                 
+            </div>
+        </div>
+    </div>
+</section>
+     </div> 
+     <div class="footer">
+    
+         <div class="footer__top">
+             <div class="container">
+      <div class="footer__top-inner">
+                    <div class="footer__contact">
+                        <div class="footer__title">
+                            Contact Us
+                        </div>
+                        <div class="footer__contact-item ">
+                            <div class="footer__contact-icon icon-mobile-phone "></div>
+                            <div class="footer__contact-text"><span>+1 23 567 8596</span>
+                         Support 24/7 Weekdays</div>
+                        </div>
+                        <div class="footer__contact-item ">
+                            <div class="footer__contact-icon icon-map-marker "></div>
+                            <div class="footer__contact-text">Auhandy Tower, New York, NY 10013, USA</div>
+                        </div>
+                        <div class="footer__contact-item ">
+                            <div class="footer__contact-icon icon-envelope-o "></div>
+                            <div class="footer__contact-text">info@example.com</div>
+                        </div>
+                        <div class="footer__contact-item ">
+                            <div class="footer__contact-icon icon-clock-o"></div>
+                            <div class="footer__contact-text">Weekdays: 09:00am - 06:00pm</div>
+                        </div>
+                    </div>
+                    <div class="footer__services">
+                        <div class="footer__title">
+                            Our Services
+                        </div>
+                        <ul class="footer__services-list">
+                            <li><a href="#">Electrical</a></li>
+                            <li><a href="#">Plumbing</a></li>
+                            <li><a href="#">Engine Repair</a></li>
+                            <li><a href="#">Repair House</a></li>
+                            <li><a href="#">Home Maintenance</a></li>
+                            <li><a href="#">Wall Paint</a></li>
+                            <li><a href="#">Installation</a></li>
+                            <li><a href="#">Garden Repairs</a></li>
+                            <li><a href="#">Soil Drilling</a></li>
+                            <li><a href="#">Support 24/7</a></li>
+                            <li><a href="#">Inspection House</a></li>
+                            <li><a href="#">Remodeling Ceiling</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__cupon">
+                        <div class="cupon__title">
+                            Get <span>25%</span>Off 
+                        </div>
+                        <div class="cupon__subtitle">
+                            Electrical Services
+                        </div>
+                        <div class="cupon__code">
+                            Redeem Code: <span>HANDYHPY28</spa>
+                        </div>
+                    </div>
+      </div>
+            </div>
+        </div>
+            <div class="footer__bottom">
+                <div class="container"><div class="footer__bottom-text">Copyright © 2018 <span>Auhandy.</span> Get The Theme</div></div>
+            </div>
+    
+          
+         
+      
+     </div>
+    </div>
+
+
+
+    <script src="js/main.min.js"></script>  
+</body>
+</html>

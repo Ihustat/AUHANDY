@@ -74,6 +74,7 @@
 
 .hamburger{
     padding: 0;
+    display: none;
 }
 // end header
 // start expert
@@ -265,8 +266,8 @@ background-position: center;
     }
 }
 // end why
-// start services
-.services{
+// start ourservices
+.our-services{
     background-color: #303030;
     padding: 73px 0 97px;
     &__inner{
@@ -329,7 +330,7 @@ cursor: pointer;
 .slick-prev{
     left: -55px;
 }
-.services__btn,
+.our-services__btn,
 .projects__link{
     background-color: $yellow;
     font-weight: 700;
@@ -340,7 +341,7 @@ cursor: pointer;
     color: #fff;
     text-transform: uppercase;
 }
-// end services
+// end our-services
 // start projects
 .projects{
 padding: 79px 0 98px;
@@ -739,4 +740,247 @@ position: relative;
    }
 }
 // end counter
+// start services page
+// start breadcrumbs
+.breadcrumbs{
+    min-height: 300px;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   text-align: center;
+   &__wrapper{
+       background-color: rgba($blue, .7);
+min-height: 300px;
+   }
+   &__title{
+       padding-top: 110px;
+       margin-bottom: 20px;
+       font-weight: 900;
+       font-size: 50px;
+       color: $yellow;
+   }
+   &__list{
+       display: flex;
+       justify-content: center;
+       color: #fff;
+       li+li{
+           &::before{
+               content: "/";
+               padding: 0 5px;
+           }
+       }
+   }
+}
+// end breadcrumbs
+// start services
+.services{
+    padding: 80px 0 100px;
+    background-color: #fff;
+    &__inner{
+        display: flex;
+        text-align: left;
+}
+&__aside{
+margin-right: 50px;
+max-width: 270px;
+width: 100%;
+}
+&__body{
+
+}
+
+}
+.services__tab{
+margin-bottom: 33px;
+}
+.services__tablinks{
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    border:1px solid #e6e6e6;
+    text-align: left;
+    height: 50px;
+    margin-bottom: 10px;
+    padding-left: 63px;
+    font-size: 16px;
+    color: $text;
+    font-family: 'Lato', sans-serif !important;
+    outline: none;
+    position: relative;
+    transition: all .3s;
+    &.active{
+        background-color: $blue;
+        color: #fff;
+        &::before{
+            color: $yellow;
+        }
+    }
+    &::before{
+        content: "\f013";
+        position: absolute;
+        left: 20px;
+        top: 9px;
+        font-family: 'icomoon';
+        font-size: 28px;
+        color: #333333;
+    }
+}
+.electrical{
+    &::before{
+        content: "\f1e6";
+    }
+}
+.plumbing{
+    &::before{
+        content: "\e901";
+    }
+}
+.wallPaint{
+    &::before{
+        content: "\f1fc";
+    }
+}
+.home{
+    &::before{
+        content: "\f015";
+    }
+}
+.installation{
+    &::before{
+        content: "\f1b3";
+    }
+}
+.garden{
+    &::before{
+        content: "\f06c";
+    }
+}
+// end services
+// start ads
+.services__ads{
+    height: 280px;
+    background-color: $blue;
+    margin-bottom: 50px;
+    text-align: center;
+    &-title{
+        padding: 45px 0 16px;
+        font-weight: 900;
+        font-size: 28px;
+        position: relative;
+        color: #fff;
+        &::before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            width: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 3px;
+            background-color: #fff;
+
+        }
+    }
+}
+// end ads
+// start contact
+.services__contact{
+    text-align: left;
+    &-title{
+        font-weight: 700;
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    &-item{
+        font-size: 18px;
+        color: $text;
+      padding-left: 33px;
+        font-family: 'Lato', sans-serif !important;
+        position: relative;
+        margin-bottom: 22px;
+        span{
+            display: block;
+        }
+        &::before{
+            font-family: 'icomoon';
+            position: absolute;
+            font-size: 28px;
+            color: $blue;
+            left: 0;
+        }
+    }
+}
+// end contact
+// start services__body
+.services__body{
+    max-width: 850px;
+    width: 100%;
+    &-content{
+        padding-bottom: 10px;
+        border-bottom: 1px solid #e5e5e5;
+        margin-bottom: 47px;
+    }
+    &-img{
+        max-width: 850;
+        height: 450px;
+        margin-bottom: 56px;
+    }
+    &-title{
+        font-weight: 900;
+        font-size: 26px;
+        margin-bottom: 24px;
+    }
+    &-text{
+        margin-bottom: 36px;
+
+    }
+    &-gallery{
+        display: flex;
+        justify-content: space-between;
+        img{
+            width: 270px;
+            height: 230px;
+        }
+    }
+}
+.services__gallery-images{
+    position: relative;
+    width: 270px;
+    height: 230px;
+    overflow: hidden;
+  
+    &:hover{
+        .services__gallery-images--hover{
+        top: 0;
+    }
+}
+}
+.services__gallery-images--hover{
+    position: absolute;
+    transition: all .5s;
+    left: 0;
+    top: -200%;
+    display: none;
+    width: 270px;
+            height: 230px;
+            background-color: rgba( $blue, .8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &::before{
+                font-size: 22px;
+                color: $yellow;
+                width: 60px;
+                height: 60px;
+                background-color: #fff;
+                border-radius: 50%;
+                display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            }
+}
+
+// end services__body
+// end services page
 @import 'media';

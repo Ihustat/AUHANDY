@@ -28,6 +28,9 @@
 .icon-medal:before {
   content: "\e900";
 }
+.icon-droplet:before {
+  content: "\e901";
+}
 .icon-search:before {
   content: "\f002";
 }
@@ -43,14 +46,23 @@
 .icon-gear:before {
   content: "\f013";
 }
+.icon-home:before {
+  content: "\f015";
+}
 .icon-clock-o:before {
   content: "\f017";
 }
 .icon-map-marker:before {
   content: "\f041";
 }
+.icon-arrows:before {
+  content: "\f047";
+}
 .icon-gift:before {
   content: "\f06b";
+}
+.icon-leaf:before {
+  content: "\f06c";
 }
 .icon-comment:before {
   content: "\f075";
@@ -84,4 +96,13 @@
 }
 .icon-rocket:before {
   content: "\f135";
+}
+.icon-cubes:before {
+  content: "\f1b3";
+}
+.icon-plug:before {
+  content: "\f1e6";
+}
+.icon-paint-brush:before {
+  content: "\f1fc";
 }
