@@ -1,13 +1,48 @@
+@media (max-width:1215px){
+    .main-services__item{
+
+        flex-basis: calc(33.3333% - 30px);
+       
+    }
+}
+@media (max-width:1160px){
+    .services__contact,
+    .services__ads{
+        display: none;
+    }
+    .services__inner{
+        display: block;
+    }
+    .services__aside,
+    .services__body{
+        max-width: 100%;
+    }
+}
 @media (max-width:1130px){
     .footer__cupon{
         margin-top: 25px;
     max-width: 100%;
     }
 }
+
 @media (max-width:935px){
     .header__search {
         display: none;
     }
+    .main-services__item{
+
+        flex-basis: calc(50% - 30px);
+       
+    }
+}
+@media (max-width:890px){
+.services__body-gallery{
+   flex-wrap: wrap;
+   justify-content: space-around;
+}
+.services__gallery-images{
+    margin-bottom: 15px;
+}
 }
 @media (max-width:770px){
     .footer__top-inner{
@@ -32,8 +67,10 @@
       width: 200px;
       transition: all .7s;
       z-index: 5;
+  
       &.active{
           right: -56px;
+          
       }
     }
     .header__list{
@@ -47,6 +84,20 @@
         display: block;
     }
 }
+@media (max-width: 615px){
+    .main-services__item{
+
+        flex-basis: 100%;
+       
+    }
+}
+@media (max-width:590px){
+    .services__body-title.services__gallery-title{
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+}
 @media (max-width:500px){
     .footer__top-inner{
         padding: 35px 0 35px;
@@ -54,6 +105,46 @@
     }
     .footer__title{
         margin-bottom: 20px;
+    }
+    .breadcrumbs {
+        height: 160px;
+    }
+    .breadcrumbs__wrapper{
+        min-height: 160px;
+    }
+    .breadcrumbs__title{
+        padding-top: 50px;
+        font-size: 37px;
+    }
+    .services__body-img{
+        min-height: 350px;
+        margin-bottom: 35px;
+    }
+    .services {
+        padding: 40px 0 70px;
+       
+    }
+    .services__body-title{
+        margin-bottom: 5px;
+        font-size: 21px;
+    }
+    .services__body-text{
+        line-height: 25px;
+    }
+    .main-services {
+        padding: 40px 0 25px;
+    }
+    .main-services__item{
+        height: 192px;
+    padding: 10px 25px 10px;
+    margin-bottom: 20px;
+    }
+    .main-services__item-icon{
+        margin-bottom: 10px;
+    }
+    .main-services__item-title{
+        font-size: 21px;
+        margin-bottom: 15px;
     }
 }
 @media (max-width:430px){
