@@ -1,4 +1,5 @@
 $(function(){
+  
     $('.our-services__slider').slick({
         infinite: true,
         slidesToShow: 4,
@@ -12,26 +13,31 @@ $(function(){
       $('.hamburger').on('click', function(){
         $('.hamburger').toggleClass('is-active')
       });
-    
-    var show = true;
-    var countbox = ".counter__item";
-    $(window).on("scroll load resize", function () {
-        if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
-        var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
-        var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
-        var w_height = $(window).height(); // Высота окна браузера
-        var d_height = $(document).height(); // Высота всего документа
-        var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
-        if (w_top + 900 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
-          $('.counter__item-number').spincrement({
-            thousandSeparator: "",
-            duration: 4000,
-            easing: 'swing',
-        });
-             
-            show = false;
-        }
+     
+      $('.counter__item-number').spincrement({
+        thousandSeparator: "",
+        duration: 4000,
+        easing: 'swing',
     });
+    // var show = true;
+    // var countbox = ".counter__item";
+    // $(window).on("scroll load resize", function () {
+    //     if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
+    //     var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
+    //     var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
+    //     var w_height = $(window).height(); // Высота окна браузера
+    //     var d_height = $(document).height(); // Высота всего документа
+    //     var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
+    //     if (w_top + 900 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+    //       $('.counter__item-number').spincrement({
+    //         thousandSeparator: "",
+    //         duration: 4000,
+    //         easing: 'swing',
+    //     });
+             
+    //         show = false;
+    //     }
+    // });
     document.getElementById("defaultOpen").click();
 
 
@@ -61,3 +67,4 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+

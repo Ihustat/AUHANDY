@@ -1320,5 +1320,148 @@ display: flex;
             }
             }
 // end team
+// start reviews
+.reviews{
+    padding: 77px 0 90px;
+    &__title{
+        text-align: center;
+        margin-bottom: 63px;
+        &::before{
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        max-width: 370px;
+      
+        position: relative;
+        &-box{
+            background-color: $blue;
+            height: 215px;
+            padding: 25px 33px;
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                border: 22px solid transparent;
+                border-left: 22px solid $blue;
+                border-top: 22px solid $blue;
+                bottom: -20px;
+                left: 42px;
+            }
+        }
+        &-title{
+            font-weight: 700;
+            font-size: 18px;
+            color: $yellow;
+           
+        }
+        &-text{
+            color: #fff;
+            line-height: 24px;
+        }
+        .reviews__avatar-wrapper{
+           display: flex;
+           align-items: center;
+           margin-top: 35px;
+        }
+        &-avatar{
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+           
+           margin-right: 10px;
+           
+        }
+        &-name{
+         
+            font-weight: 700;
+            font-size: 18px;
+        }
+    }
+}
+// end reviews
 // end about page
+// start contact
+.contact{
+    padding: 80px 0 100px;
+    &__map{
+        max-width: 1170px;
+        height: 400px;
+    }
+    &__inner{
+        box-shadow: 0px 3px 20px 0px rgba(0, 0, 0, 0.1);
+        max-width: 1030px;
+        margin: -70px auto 0;
+        padding: 50px;
+        position: relative;
+        background-color: #fff;
+      
+    }
+    &__title{
+        text-align: center;
+        margin-bottom: 37px;
+        &::before{
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__form{
+        text-align: center;
+        input{
+            max-width: 455px;
+            width: 100%;
+            background-color: #f2f2f2;
+            border: 1px solid #e5e5e5;
+            height: 50px;
+            padding: 0 20px;
+            &+input{
+                margin-left: 16px;
+            }
+            &::placeholder{
+                font-family: 'Lato', sans-serif;
+                color: $text;
+                font-size: 15px;
+            }
+        }
+        textarea{
+            margin-top: 20px;
+            height: 160px;
+            display: block;
+            resize: none;
+            width: 100%;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border: 1px solid #e5e5e5;
+            &::placeholder{
+                font-family: 'Lato', sans-serif;
+                color: $text;
+                font-size: 15px;
+            }
+        }
+        button{
+
+            margin-top: 40px;
+            font-weight: 700;
+            color: #fff;
+            width: 140px;
+            text-align: center;
+            height: 50px;
+            padding: 10px 10px;
+            border: none;
+            background-color: $yellow;
+            cursor: pointer;
+        }
+    }
+}
+// end contact
 @import 'media';
+
+  
