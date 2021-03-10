@@ -13,7 +13,9 @@ $(function(){
       $('.hamburger').on('click', function(){
         $('.hamburger').toggleClass('is-active')
       });
-     
+      $('.faq__accordion-item').on('click', '.faq__accordion-title', function()
+      { $(this).parent().toggleClass('active');
+    });
       $('.counter__item-number').spincrement({
         thousandSeparator: "",
         duration: 4000,
@@ -38,6 +40,22 @@ $(function(){
     //         show = false;
     //     }
     // });
+   
+    var acc = document.getElementsByClassName(" faq__accordion-title");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+
     document.getElementById("defaultOpen").click();
 
 

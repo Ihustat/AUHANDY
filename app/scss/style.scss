@@ -1227,7 +1227,16 @@ display: flex;
       padding: 10px 10px;
   }
 }
-
+.welcome__image{
+    width: 370px;
+    height: 350px;
+    background-color: $blue;
+    padding: 4px;
+    img{
+        width: 362px;
+        height: 343px;
+    }
+}
 // end welcome
 // start team
 .team{
@@ -1462,6 +1471,146 @@ display: flex;
     }
 }
 // end contact
+// start FAQ
+.faq{
+    padding: 90px 0 100px;
+    &__inner{
+        display: flex;
+     
+
+    }
+    &__accordion{
+max-width: 570px;
+width: 100%;
+&-item{
+    margin-bottom: 15px;
+    &.active{
+border-bottom: 1px solid #e5e5e5;
+    }
+}
+    }
+    &__accordion-title{
+        display: flex;
+        cursor: pointer;
+        button{
+            margin-left: 18px;
+            margin-right: auto;
+          font-size: 18px;
+          color: $text;
+          background-color: transparent;
+          border: none;
+          outline: none;
+          cursor: pointer;
+        }
+        &.active{
+            .faq__accordion-svg--arrow{
+                color: $yellow;
+                transform-origin:center center ;
+                svg{
+
+                    transform: rotate(-180deg);
+                }
+            }
+            .faq__accordion-svg--block{
+                color: #fff;
+                background-color: $yellow;
+            }
+            & .panel{
+            }
+        }
+    }
+}
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    color: $text;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+   
+  
+    
+}
+.faq__accordion-svg--arrow{
+    order: 3;
+    color: #adadad;
+    transition: all .3s;
+   svg{
+       transition: all .3s;
+   }
+}
+.faq__accordion-svg--block{
+width: 50px;
+height: 50px;
+background-color: #f2f2f2;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #333333;
+transition: all .3s;
+}
+.faq__form{
+    margin-left: 97px;
+    &-title{
+        font-size: 24px;
+        font-weight: 700;    
+        margin-bottom: 16px;
+    }
+    &-text{
+        color: $text;
+        margin-bottom: 30px;
+    }
+    &-form{
+        .faq__form-name{
+            width: 100%;
+        max-width: 500px;
+        }
+        
+        input{
+            width: 240px;
+            margin-bottom: 20px;
+            height: 50px;
+            background-color: #f2f2f2;
+            border: 1px solid #e5e5e5;
+            padding: 0 18px;
+            &::placeholder{
+                font-family: 'Lato', sans-serif;
+                font-size: 15px;
+                color: $text;
+            }
+        }
+        textarea{
+            width: 100%;
+            height: 160px;
+            resize: none;
+            background-color: #f2f2f2;
+            border: 1px solid #e5e5e5;
+            padding: 18px 18px;
+            margin-bottom: 30px;
+            &::placeholder{
+                font-family: 'Lato', sans-serif;
+                font-size: 15px;
+                color: $text;
+            }
+        }
+        button{
+            background-color: $yellow;
+            color: #fff;
+            text-transform: uppercase;
+            width: 140px;
+            height: 50px;
+            text-align: center;
+            padding: 10px 10px;
+            cursor: pointer;
+            border: none;
+            outline: none;
+        }
+    }
+}
+.faq__form-mail{
+    margin-right: 19px;
+}
+// end FAQ
 @import 'media';
 
   
