@@ -1,47 +1,119 @@
 $(function(){
+ 
   
+
     $('.our-services__slider').slick({
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 4,
         prevArrow: '<button type="button" class="slick-prev slick-arrow"><img src="images/prev-arrow.png" alt=""></button>',
-        nextArrow: '<button type="button" class="slick-next slick-arrow"><img src="images/next-arrow.png" alt=""></button>'
+        nextArrow: '<button type="button" class="slick-next slick-arrow"><img src="images/next-arrow.png" alt=""></button>',
+        responsive: [
+          {
+            breakpoint: 1301,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3, 
+              arrows: false,
+              autoplaySpeed: 2000,
+              autoplay: true,
+            }
+          },
+          {
+            breakpoint: 895,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2, 
+              arrows: false,
+              autoplaySpeed: 2000,
+              autoplay: true,
+            }
+          },
+          {
+            breakpoint: 625,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1, 
+              arrows: false,
+              autoplaySpeed: 2000,
+              autoplay: true,
+            }
+          },
+        
+        ]
       });
       $('.hamburger').on('click', function(){
         $('.header__menu').toggleClass('active')
       });
       $('.hamburger').on('click', function(){
-        $('.hamburger').toggleClass('is-active')
+        $('.hamburger').toggleClass('is-active');
+        $('body').toggleClass('fixed-page');
       });
       $('.faq__accordion-item').on('click', '.faq__accordion-title', function()
       { $(this).parent().toggleClass('active');
     });
-      $('.counter__item-number').spincrement({
-        thousandSeparator: "",
-        duration: 4000,
-        easing: 'swing',
+   
+
+
+
+
+    $('.scrollup').on('click', function() {
+
+      $("html, body").animate({
+        scrollTop:0
+      },1000);
+    })
+    $(this.body).on('scroll', function() {
+      // если пользователь прокрутил страницу более чем на 200px
+      if ($(this).scrollTop()>200) {
+        // то сделать кнопку scrollup видимой
+        $('.scrollup').fadeIn();
+      }
+      // иначе скрыть кнопку scrollup
+      else {
+        $('.scrollup').fadeOut();
+      }
     });
-    // var show = true;
-    // var countbox = ".counter__item";
-    // $(window).on("scroll load resize", function () {
-    //     if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
-    //     var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
-    //     var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
-    //     var w_height = $(window).height(); // Высота окна браузера
-    //     var d_height = $(document).height(); // Высота всего документа
-    //     var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
-    //     if (w_top + 900 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
-    //       $('.counter__item-number').spincrement({
-    //         thousandSeparator: "",
-    //         duration: 4000,
-    //         easing: 'swing',
-    //     });
+  //   $('.counter__item-number').spincrement({
+  //     thousandSeparator: "",
+  //     duration: 4000,
+  //     easing: 'swing',
+  // });
+    var show = true;
+    var countbox = ".counter__item";
+    $(this.body).on("scroll load resize", function () {
+        if (!show) return false; // Отменяем показ анимации, если она уже была выполнена
+        var w_top = $(window).scrollTop(); // Количество пикселей на которое была прокручена страница
+        var e_top = $(countbox).offset().top; // Расстояние от блока со счетчиками до верха всего документа
+        var w_height = $(window).height(); // Высота окна браузера
+        var d_height = $(document).height(); // Высота всего документа
+        var e_height = $(countbox).outerHeight(); // Полная высота блока со счетчиками
+        if (w_top + 900 >= e_top || w_height + w_top == d_height || e_height + e_top < w_height) {
+          $('.counter__item-number').spincrement({
+            thousandSeparator: "",
+            duration: 4000,
+            easing: 'swing',
+        });
              
-    //         show = false;
-    //     }
-    // });
+            show = false;
+        }
+    });
    
     var acc = document.getElementsByClassName(" faq__accordion-title");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+var acc = document.getElementsByClassName(" header__dropdown");
 var i;
 
 for (i = 0; i < acc.length; i++) {
@@ -85,4 +157,6 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+
 
