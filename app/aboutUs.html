@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel = "shortcut icon" href = "images/favicon.png" type = "image/png">
     <link rel="stylesheet" href="css/hamburgers.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -19,9 +20,9 @@
         <header class="header">
             <div class="container">
        <div class="header__inner">
-           <div class="header__logo">
-               <img src="images/Logo.png" alt="">
-           </div>
+        <a href="index.html" class="header__logo">
+            <img src="images/Logo.png" alt="">
+        </a>
            <div class="hamburger hamburger--spin">
                <div class="hamburger-box">
                  <div class="hamburger-inner"></div>
@@ -33,42 +34,44 @@
                                
            <nav class="header__menu">
                <ul class="header__list">
-                   <li ><a class="active" href="index.html">   home </a></li>
-                   <li class="header__dropdown"><span>Services</span>
+                   <li ><a  href="index.html"> Главная </a></li>
+                   <li ><a class="active" href="aboutUs.html">  О нас </a></li>
+                   <li class="header__dropdown"><span>Услуги</span>
                        <div class="header__services-menu ">
                            <ul>
-                               <li><a href="services.html">All</a></li>
-                               <li><a href="engine.html">Engine Repairs</a></li>
-                               <li><a href="electrical.html">Electrical</a></li>
-                               <li><a href="plumbing.html">Plumbing</a></li>
-                               <li><a href="wallPaint.html">Wall Paint</a></li>
-                               <li><a href="home.html">Home Maintenance</a></li>
-                               <li><a href="installation.html">Installation</a></li>
-                               <li><a href="garden.html">Garden Repairs</a></li>
+                               <li><a href="services.html">Все</a></li>
+                               <li><a href="engine.html">Ремонт двигателей</a></li>
+                               <li><a href="electrical.html">Электрика</a></li>
+                               <li><a href="plumbing.html">Сантехника</a></li>
+                               <li><a href="wallPaint.html">Покраска стен</a></li>
+                               <li><a href="home.html">Ремонт зданий</a></li>
+                               <li><a href="installation.html">Установка</a></li>
+                               <li><a href="garden.html">Реставрация</a></li>
                            </ul>
                        </div>
                    </li>
                    <div class="header__accordeon panel">
                        <ul>
-                           <li><a href="services.html">All</a></li>
-                           <li><a href="engine.html">Engine Repairs</a></li>
-                           <li><a href="electrical.html">Electrical</a></li>
-                           <li><a href="plumbing.html">Plumbing</a></li>
-                           <li><a href="wallPaint.html">Wall Paint</a></li>
-                           <li><a href="home.html">Home Maintenance</a></li>
-                           <li><a href="installation.html">Installation</a></li>
-                           <li><a href="garden.html">Garden Repairs</a></li>
+                           <li><a href="services.html">Все</a></li>
+                               <li><a href="engine.html">Ремонт двигателей</a></li>
+                               <li><a href="electrical.html">Электрика</a></li>
+                               <li><a href="plumbing.html">Водопровод</a></li>
+                               <li><a href="wallPaint.html">Покраска стен</a></li>
+                               <li><a href="home.html">Ремонт зданий</a></li>
+                               <li><a href="installation.html">Установка</a></li>
+                               <li><a href="garden.html">Реставрация</a></li>
                        </div>
                    </li>
-                   <li><a href="projects.html">Projects</a></li>
+                   <li><a href="projects.html">Проекты</a></li>
                   
-                   <li><a href="blog.html">Blog</a></li>
-                   <li><a href="contact.html">Contact</a></li>
+                   <li><a href="blog.html">Блог</a></li>
+                   <li><a  href="FAQ.html">Вопросы</a></li>
+                   <li><a href="contact.html">Контакты</a></li>
                </ul>
            </nav>
            <div class="header__search ">
                <form>
-                   <input class="header__search-input" type="text" placeholder="search">
+                   <input class="header__search-input" type="text" placeholder="Поиск">
                    <button class="header__search-button"  type="submit"></button>
                </form>
            </div>
@@ -76,13 +79,13 @@
    </div>
 </header>
 
-<div class="breadcrumbs " style=" background-image: url(images/breadcrumbs-engine.jpg);">
+<div class="breadcrumbs " style=" background-image: url(images/aboutsUs.jpg);">
 
     <div class="breadcrumbs__wrapper">
-          <div class="breadcrumbs__title">About Us</div>
+          <div class="breadcrumbs__title">О нас</div>
               <ul class="breadcrumbs__list">
-                  <li class="breadcrumbs__item"><a href="#">Home </a> </li>
-                  <li class="breadcrumbs__item"> about us</li>
+                  <li class="breadcrumbs__item"><a href="index.html">Главная </a> </li>
+                  <li class="breadcrumbs__item"> О нас</li>
               </ul>
              
           </div>
@@ -91,138 +94,175 @@
     <div class="container">
         <div class="welcome__inner">
             <div class="welcome__title title">
-                Welcome To HandyBlue
+              Коротко о нас
             </div>
             <div class="welcome__box">
                <div class="welcome__tabs">
-                    <button class="tablinks welcome-tablinks " id="defaultOpen" onclick="openCity(event, 'about')">About AUHandy</button>
-                    <button class="tablinks welcome-tablinks" onclick="openCity(event, 'waterTesting')">Water Testing</button>
-                    <button class="tablinks welcome-tablinks" onclick="openCity(event, 'repairFittings')">Repair Of Hose Fittings</button>
-                    <button class="tablinks welcome-tablinks" onclick="openCity(event, 'shower')">Shower Facilities</button>
-                    <button class="tablinks welcome-tablinks" onclick="openCity(event, 'plumbingRepair')">Plumbing Repair</button>
-                    <button class="tablinks welcome-tablinks" onclick="openCity(event, 'cleanPlumbing')">Clean Plumbing</button>
+                    <button class="tablinks welcome-tablinks " id="defaultOpen" onclick="openCity(event, 'about')">Про AUHandy</button>
+                    <button class="tablinks welcome-tablinks" onclick="openCity(event, 'waterTesting')">Главное</button>
+                    <button class="tablinks welcome-tablinks" onclick="openCity(event, 'repairFittings')">Наша цель</button>
+                    <button class="tablinks welcome-tablinks" onclick="openCity(event, 'shower')">Наши плюсы</button>
+                 
                   
                </div> 
              <div id="about" class="tabcontent welcome-tabcontent">
             <div class="welcome-tabcontent__wrapper">
                        <div class="welcome__content">
                         <div class="welcome__content-title">
-                            About AUHandy
+                            Команда AUHandy
                         </div>
                         <div class="welcome__content-text">
-                            Donec eu tellus neque. Sed vestibulum eros aliquam eleif bibendum. Nullam tristique purus leo, eu consectetur lor tincidunt in. Ut at erat vel libero tristique elementum ac eget nisl. Duis imperdiet felis. Nulla venenatis, urna id faucibus facilisis, magna placerat lectus  leo turpis, volutpat eu interdum et, facilisis vehicula lacus. Quisque viverra vitae arcu eu eleifend. Sed bibendum facilisis sapien  ligula nisl interdum augue, non posuere est ligula non enim.
+                            Фирма AUHandy - это ремонтно-строительная компания, состоящая из специалистов высокого уровня: инженеров, рабочих, архитекторов и дизайнеров. Мы делаем качественный ремонт квартир с материалами, разрабатываем индивидуальные дизайн-проекты и инженерные проекты. Наши расценки вполне приемлемы для Заказчиков. В компании работают только профессионалы: архитекторы, инженеры, менеджеры клиентского сервиса, специалисты по логистике и комплектации материалов, программисты, маркетологи. 
                         </div>
-                        <ul class="welcome__content-tags">
-                            <li class="welcome__content-tag icon-home">Quisque is eleifend.</li>
-                            <li class="welcome__content-tag icon-life-bouy">Nunc congue tincidunt mi.</li>
-                            <li class="welcome__content-tag icon-user">Risus sem lobor posuere.</li>
-                            <li class="welcome__content-tag icon-trophy">Phasellus tincidunt velit.</li>
-                        </ul>
-                        <a href="#" class="welcome__content-button">Read More</a>
+                        
+                      
                        </div>
-                       <div class="welcome__image">
+                       <div class="welcome__image style">
                         <img src="images/welcome-image.jpg" alt="">
                        </div>
             </div>
              </div>
-             <div id="shower" class="tabcontent welcome-tabcontent">mda</div>
+             <div id="waterTesting" class="tabcontent welcome-tabcontent">
+                <div class="welcome-tabcontent__wrapper">
+                           <div class="welcome__content">
+                            <div class="welcome__content-title">
+                                Главное для нас — это репутация
+                            </div>
+                            <div class="welcome__content-text">
+                                Мы всегда делаем свою работу на отлично. Трехступенчатый контроль качества выполняемых работ, использование только качественных материалов от проверенных производителей, позволяют нам давать гарантию 2 года на сделанный ремонт.
+                            </div>
+                           </div>
+                           <div class="welcome__image style">
+                            <img class="welcome__images"  src="images/reputation.jpg" alt="">
+                           </div>
+                </div>
+                 </div>
+                 <div id="repairFittings" class="tabcontent welcome-tabcontent">
+                    <div class="welcome-tabcontent__wrapper">
+                               <div class="welcome__content">
+                                <div class="welcome__content-title">
+                                    Основная цель — Ваш комфорт
+                                </div>
+                                <div class="welcome__content-text">
+                                    Основная цель нашей компании — предоставить каждому нашему клиенту возможность жить в красивом, удобном, а также функциональном интерьере.
+                                </div>
+                               </div>
+                               <div class="welcome__image style">
+                                <img class="welcome__images"  src="images/comfort.jpg" alt="">
+                               </div>
+                    </div>
+                     </div>
+                     <div id="shower" class="tabcontent welcome-tabcontent">
+                        <div class="welcome-tabcontent__wrapper">
+                                   <div class="welcome__content">
+                                  
+                                    <div class="welcome__content-text">
+                                       <ul class="shower__list">
+                                           <li class="icon-shield"><span>Гарантия 3 года</span>Предоставляем трехлетнюю гарантию по договору на все выполненные работы.
+                                        </li>
+                                           <li class="icon-money"><span>Честные цены</span>Окончательная сметная стоимость без непредвиденных расходов и переплат.</li>
+                                           <li class="icon-key"><span>Всё в одном месте</span>Дизайн-проекты, согласование перепланировки, комплектация и ремонт под ключ</li>
+                                           <li></li>
+                                       </ul>
+                                    </div>
+                                   
+                                   </div>
+                                   <div class="welcome__image ">
+                                    <img class="welcome__images" src="images/advantages.jpg" alt="">
+                                   </div>
+                        </div>
+                         </div>
+                 
+          
             </div>
         </div>
     </div>
 </section>
-<section class="radius">
-    <div class="radius__wrapper">
-        <div class="container">
-            <div class="radius__inner">
-                <div class="radius__sircle"></div>
-            </div>
-        </div>
-    </div>
-</section>
+
 <section class="team">
     <div class="container">
         <div class="team__inner">
             <div class="team__title title">
-                Our Special Team
+              Наши специалисты
             </div>
                 <div class="team__box">
                     <div class="team__item">
                         <div class="team__item-image">
-                            <img src="images/team-img.jpg" alt="">
+                            <img src="images/workers/genrih.jpg" alt="">
                         </div>
                         <div class="team__item-social">
-                            <a href="#" class="team__fb team__links"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a >
-                            <a href="#" class="team__google team__links"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z" fill-rule="evenodd" clip-rule="evenodd"/></svg></a >
-                            <a href="#" class="team__twitter team__links"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a >
-                            <a href="#" class="team__vk team__links"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path class="st0" d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974h-3.255c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z"/></svg></a >
-                            <a href="#" class="team__inst team__links"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a >
+                            <a href="#" target="_blank" class="team__fb team__links"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a >
+                            <a href="#" target="_blank" class="team__google team__links"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z" fill-rule="evenodd" clip-rule="evenodd"/></svg></a >
+                            <a href="#" target="_blank" class="team__twitter team__links"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a >
+                            <a href="https://vk.com/refreshirator" target="_blank"  class="team__vk team__links"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path class="st0" d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974h-3.255c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z"/></svg></a >
+                            <a href="https://instagram.com/insultjopi?igshid=18fsb04kubyv6" target="_blank" class="team__inst team__links"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a >
                         </div>
                       <div class="team__item-info">
                             <div class="team__item-name">
-                                Henrik Martinez
+                                Генрих Мхитарян
                             </div>
                             <div class="team__item-position">
-                                General Manager
+                               Гдавный менеджер
                             </div>
                       </div>
                     </div>
                     <div class="team__item">
                         <div class="team__item-image">
-                            <img src="images/team-img.jpg" alt="">
+                            <img src="images/workers/dmitrii.jpg" alt="">
                         </div>
                         <div class="team__item-social">
-                            <a href="#" class="team__fb team__links"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a >
-                            <a href="#" class="team__google team__links"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z" fill-rule="evenodd" clip-rule="evenodd"/></svg></a >
-                            <a href="#" class="team__twitter team__links"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a >
-                            <a href="#" class="team__vk team__links"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path class="st0" d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974h-3.255c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z"/></svg></a >
-                            <a href="#" class="team__inst team__links"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a >
+                            <a href="#" target="_blank" class="team__fb team__links"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a >
+                            <a href="#" target="_blank" class="team__google team__links"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z" fill-rule="evenodd" clip-rule="evenodd"/></svg></a >
+                            <a href="#" target="_blank" class="team__twitter team__links"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a >
+                            <a href="https://vk.com/refreshirator" target="_blank" class="team__vk team__links"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path class="st0" d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974h-3.255c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z"/></svg></a >
+                            <a  href="https://instagram.com/insultjopi?igshid=18fsb04kubyv6" target="_blank" class="team__inst team__links"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a >
                         </div>
                       <div class="team__item-info">
                             <div class="team__item-name">
-                                Henrik Martinez
+                            Дмитрий Гринёв
                             </div>
                             <div class="team__item-position">
-                                General Manager
+                            Управляющий
                             </div>
                       </div>
                     </div>
                     <div class="team__item">
                         <div class="team__item-image">
-                            <img src="images/team-img.jpg" alt="">
+                            <img src="images/workers/alexandr.jpg" alt="">
                         </div>
                         <div class="team__item-social">
-                            <a href="#" class="team__fb team__links"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a >
-                            <a href="#" class="team__google team__links"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z" fill-rule="evenodd" clip-rule="evenodd"/></svg></a >
-                            <a href="#" class="team__twitter team__links"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a >
-                            <a href="#" class="team__vk team__links"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path class="st0" d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974h-3.255c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z"/></svg></a >
-                            <a href="#" class="team__inst team__links"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a >
+                            <a href="#" target="_blank" class="team__fb team__links"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a >
+                            <a href="#" target="_blank" class="team__google team__links"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z" fill-rule="evenodd" clip-rule="evenodd"/></svg></a >
+                            <a href="#" target="_blank" class="team__twitter team__links"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a >
+                            <a href="https://vk.com/refreshirator" target="_blank"  class="team__vk team__links"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path class="st0" d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974h-3.255c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z"/></svg></a >
+                            <a  href="https://instagram.com/insultjopi?igshid=18fsb04kubyv6" target="_blank" class="team__inst team__links"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a >
                         </div>
                       <div class="team__item-info">
                             <div class="team__item-name">
-                                Henrik Martinez
+                             Александр Иванов
                             </div>
                             <div class="team__item-position">
-                                General Manager
+                               Главный дизайнер
                             </div>
                       </div>
                     </div>
                     <div class="team__item">
                         <div class="team__item-image">
-                            <img src="images/team-img.jpg" alt="">
+                            <img src="images/workers/vasilii.jpg" alt="">
                         </div>
                         <div class="team__item-social">
-                            <a href="#" class="team__fb team__links"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a >
-                            <a href="#" class="team__google team__links"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z" fill-rule="evenodd" clip-rule="evenodd"/></svg></a >
-                            <a href="#" class="team__twitter team__links"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a >
-                            <a href="#" class="team__vk team__links"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path class="st0" d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974h-3.255c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z"/></svg></a >
-                            <a href="#" class="team__inst team__links"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a >
+                            <a href="#" target="_blank" class="team__fb team__links"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg></a >
+                            <a href="#" target="_blank" class="team__google team__links"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7 11v2.4h3.97c-.16 1.029-1.2 3.02-3.97 3.02-2.39 0-4.34-1.979-4.34-4.42 0-2.44 1.95-4.42 4.34-4.42 1.36 0 2.27.58 2.79 1.08l1.9-1.83c-1.22-1.14-2.8-1.83-4.69-1.83-3.87 0-7 3.13-7 7s3.13 7 7 7c4.04 0 6.721-2.84 6.721-6.84 0-.46-.051-.81-.111-1.16h-6.61zm0 0 17 2h-3v3h-2v-3h-3v-2h3v-3h2v3h3v2z" fill-rule="evenodd" clip-rule="evenodd"/></svg></a >
+                            <a href="#" target="_blank" class="team__twitter team__links"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg></a >
+                            <a href="https://vk.com/refreshirator" target="_blank" class="team__vk team__links"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path class="st0" d="M13.162 18.994c.609 0 .858-.406.851-.915-.031-1.917.714-2.949 2.059-1.604 1.488 1.488 1.796 2.519 3.603 2.519h3.2c.808 0 1.126-.26 1.126-.668 0-.863-1.421-2.386-2.625-3.504-1.686-1.565-1.765-1.602-.313-3.486 1.801-2.339 4.157-5.336 2.073-5.336h-3.981c-.772 0-.828.435-1.103 1.083-.995 2.347-2.886 5.387-3.604 4.922-.751-.485-.407-2.406-.35-5.261.015-.754.011-1.271-1.141-1.539-.629-.145-1.241-.205-1.809-.205-2.273 0-3.841.953-2.95 1.119 1.571.293 1.42 3.692 1.054 5.16-.638 2.556-3.036-2.024-4.035-4.305-.241-.548-.315-.974-1.175-.974h-3.255c-.492 0-.787.16-.787.516 0 .602 2.96 6.72 5.786 9.77 2.756 2.975 5.48 2.708 7.376 2.708z"/></svg></a >
+                            <a  href="https://instagram.com/insultjopi?igshid=18fsb04kubyv6" target="_blank" class="team__inst team__links"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a >
                         </div>
                       <div class="team__item-info">
                             <div class="team__item-name">
-                                Henrik Martinez
+                                Василий Круглов
                             </div>
                             <div class="team__item-position">
-                                General Manager
+                               Начальник отдела
                             </div>
                       </div>
                     </div>
@@ -234,75 +274,69 @@
 <section class="reviews">
     <div class="container">
         <div class="reviews__title title">
-            Our Client Say
+          Наши клиенты говорят
         </div>
         <div class="reviews__inner">
             <div class="reviews__item">
                 <div class="reviews__item-box">
                     <div class="reviews__item-title">
-                        “Quality Design”
+                      "Ремонт кухни"
                     </div>
                     <div class="reviews__item-text">
-                        Aenean arcu nisi, ullamcorper sed ornar amet, lacinia non nibh. Maecenas sit amet arcu eget leo pellentesque euismod Duis quis dapibus, dictum leo id, molestie nunc.
+                        Обратилась к ним для установки теплого пола и косметического ремонта кухни. Всё сделали очень качественно и с душой! Видно, что люди любят свое дело.
                     </div>
                 </div>
               <div class="reviews__avatar-wrapper">
-                    <div class="reviews__item-avatar" style="background-image: url(images/reviews-avatar.jpg);">
+                    <div class="reviews__item-avatar" style="background-image: url(images/workers/evgeniya.jpg);">
     
                     </div>
                     <div class="reviews__avatar-content">
                         <div class="reviews__item-name">
-                            Alexander Sullivan
+                         Евгения Барышева
                         </div>
-                        <div class="reviews__item-position">
-                            Designer in Envato
-                        </div>
+                        
                    </div>
                 </div>
             </div>
             <div class="reviews__item">
                 <div class="reviews__item-box">
                     <div class="reviews__item-title">
-                        “Quality Design”
+                        “Отделочные работы”
                     </div>
                     <div class="reviews__item-text">
-                        Aenean arcu nisi, ullamcorper sed ornar amet, lacinia non nibh. Maecenas sit amet arcu eget leo pellentesque euismod Duis quis dapibus, dictum leo id, molestie nunc.
+                        Бригада рабочих приехала, за короткое время сделала все, что мы просили. Остались только положительные впечатления. Всем советуем!
                     </div>
                 </div>
               <div class="reviews__avatar-wrapper">
-                    <div class="reviews__item-avatar" style="background-image: url(images/reviews-avatar.jpg);">
+                    <div class="reviews__item-avatar" style="background-image: url(images/workers/sergeevich.jpg);">
     
                     </div>
                     <div class="reviews__avatar-content">
                         <div class="reviews__item-name">
-                            Alexander Sullivan
+                            Александр Сергеевич
                         </div>
-                        <div class="reviews__item-position">
-                            Designer in Envato
-                        </div>
+                      
                    </div>
                 </div>
             </div>
             <div class="reviews__item">
                 <div class="reviews__item-box">
                     <div class="reviews__item-title">
-                        “Quality Design”
+                        “Ремонт офиса”
                     </div>
                     <div class="reviews__item-text">
-                        Aenean arcu nisi, ullamcorper sed ornar amet, lacinia non nibh. Maecenas sit amet arcu eget leo pellentesque euismod Duis quis dapibus, dictum leo id, molestie nunc.
+                        Приехали ребята, сразу видно, что опытные и квалифицированные. Ремонтные работы были сделаны точно в срок. Приятно еще и то, что предоплату за услуги фирма не берет.
                     </div>
                 </div>
               <div class="reviews__avatar-wrapper">
-                    <div class="reviews__item-avatar" style="background-image: url(images/reviews-avatar.jpg);">
+                    <div class="reviews__item-avatar" style="background-image: url(images/workers/natalya.jpg);">
     
                     </div>
                    <div class="reviews__avatar-content">
                         <div class="reviews__item-name">
-                            Alexander Sullivan
+                         Наталья
                         </div>
-                        <div class="reviews__item-position">
-                            Designer in Envato
-                        </div>
+                        
                    </div>
                 </div>
             </div>
@@ -313,72 +347,72 @@
      </div> 
      <div class="footer">
     
-         <div class="footer__top">
-             <div class="container">
-      <div class="footer__top-inner">
-                    <div class="footer__contact">
-                        <div class="footer__title">
-                            Contact Us
-                        </div>
-                        <div class="footer__contact-item ">
-                            <div class="footer__contact-icon icon-mobile-phone "></div>
-                            <div class="footer__contact-text"><span>+1 23 567 8596</span>
-                         Support 24/7 Weekdays</div>
-                        </div>
-                        <div class="footer__contact-item ">
-                            <div class="footer__contact-icon icon-map-marker "></div>
-                            <div class="footer__contact-text">Auhandy Tower, New York, NY 10013, USA</div>
-                        </div>
-                        <div class="footer__contact-item ">
-                            <div class="footer__contact-icon icon-envelope-o "></div>
-                            <div class="footer__contact-text">info@example.com</div>
-                        </div>
-                        <div class="footer__contact-item ">
-                            <div class="footer__contact-icon icon-clock-o"></div>
-                            <div class="footer__contact-text">Weekdays: 09:00am - 06:00pm</div>
-                        </div>
-                    </div>
-                    <div class="footer__services">
-                        <div class="footer__title">
-                            Our Services
-                        </div>
-                        <ul class="footer__services-list">
-                            <li><a href="#">Electrical</a></li>
-                            <li><a href="#">Plumbing</a></li>
-                            <li><a href="#">Engine Repair</a></li>
-                            <li><a href="#">Repair House</a></li>
-                            <li><a href="#">Home Maintenance</a></li>
-                            <li><a href="#">Wall Paint</a></li>
-                            <li><a href="#">Installation</a></li>
-                            <li><a href="#">Garden Repairs</a></li>
-                            <li><a href="#">Soil Drilling</a></li>
-                            <li><a href="#">Support 24/7</a></li>
-                            <li><a href="#">Inspection House</a></li>
-                            <li><a href="#">Remodeling Ceiling</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer__cupon">
-                        <div class="cupon__title">
-                            Get <span>25%</span>Off 
-                        </div>
-                        <div class="cupon__subtitle">
-                            Electrical Services
-                        </div>
-                        <div class="cupon__code">
-                            Redeem Code: <span>HANDYHPY28</spa>
-                        </div>
-                    </div>
-      </div>
-            </div>
-        </div>
-            <div class="footer__bottom">
-                <div class="container"><div class="footer__bottom-text">Copyright © 2018 <span>Auhandy.</span> Get The Theme</div></div>
-            </div>
-    
-          
-         
-      
+        <div class="footer__top">
+            <div class="container">
+     <div class="footer__top-inner">
+                   <div class="footer__contact">
+                       <div class="footer__title">
+                          Свяжитесь с нами
+                       </div>
+                       <div class="footer__contact-item ">
+                           <div class="footer__contact-icon icon-mobile-phone "></div>
+                           <div class="footer__contact-text"><span>+1 23 567 8596</span>
+                       Поддержка 24/7</div>
+                       </div>
+                       <div class="footer__contact-item ">
+                           <div class="footer__contact-icon icon-map-marker "></div>
+                           <div class="footer__contact-text">Auhandy, Галерея Краснодар</div>
+                       </div>
+                       <div class="footer__contact-item ">
+                           <div class="footer__contact-icon icon-envelope-o "></div>
+                           <div class="footer__contact-text">info@example.com</div>
+                       </div>
+                       <div class="footer__contact-item ">
+                           <div class="footer__contact-icon icon-clock-o"></div>
+                           <div class="footer__contact-text">Часы работы: 09:00 - 06:00</div>
+                       </div>
+                   </div>
+                   <div class="footer__services">
+                       <div class="footer__title">
+                           Наши услуг
+                       </div>
+                       <ul class="footer__services-list">
+                           <li><a href="electrical.html">Электрика</a></li>
+                           <li><a href="plumbing.html">Сантехника</a></li>
+                           <li><a href="engine.html">Ремонт двигателей</a></li>
+                           <li><a href="404.html">Ремонт дома</a></li>
+                           <li><a href="home.html">Ремонт зданий</a></li>
+                           <li><a href="wallPAint.html">Покраска стен</a></li>
+                           <li><a href="installation.html">Установка</a></li>
+                           <li><a href="garden.html">Реставрация</a></li>
+                           <li><a href="404.html">Бурение почвы</a></li>
+                           <li><a href="404.html">Поддержка 24/7</a></li>
+                           <li><a href="404.html">Инспекция дома</a></li>
+                           <li><a href="404.html">Разработка дизайна</a></li>
+                       </ul>
+                   </div>
+                   <div class="footer__cupon">
+                       <div class="cupon__title">
+                           Получите <span>25%</span>скидку
+                       </div>
+                       <div class="cupon__subtitle">
+                           Услуги электрика
+                       </div>
+                       <div class="cupon__code">
+                           Купон <span>HANDYHPY28</spa>
+                       </div>
+                   </div>
      </div>
+           </div>
+       </div>
+           <div class="footer__bottom">
+               <div class="container"><div class="footer__bottom-text">Copyright © 2021<span>Auhandy.</span> </div></div>
+           </div>
+   
+         
+        
+     
+    </div>
     </div>
 
 

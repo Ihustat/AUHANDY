@@ -6,62 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel = "shortcut icon" href = "images/favicon.png" type = "image/png">
     <link rel="stylesheet" href="css/hamburgers.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <div class="wrapper">
      <div class="content">
-
-<header class="header">
-    <div class="container">
-        <div class="header__inner">
-            <div class="header__logo">
-                <img src="images/Logo.png" alt="">
-            </div>
-            <div class="hamburger hamburger--spin">
-                <div class="hamburger-box">
-                  <div class="hamburger-inner"></div>
-                </div>
-              </div>
-            <!-- <div class="header-burger ">
-                <span></span>
-            </div>   -->
-                                
-        
-                <nav class="header__menu">
-                    <ul class="header__list">
-                        <li><a href="#">    Home </a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-       
-            <div class="header__search ">
-                <form>
-                    <input class="header__search-input" type="text" placeholder="search">
-                    <button class="header__search-button"  type="submit"></button>
-                </form>
-            </div>
-        </div>
-    </div>
-</header>
-<div class="breadcrumbs " style=" background-image: url(images/breadcrumbs-engine.jpg);">
-
-  <div class="breadcrumbs__wrapper">
-        <div class="breadcrumbs__title">Plumbing</div>
-            <ul class="breadcrumbs__list">
-                <li class="breadcrumbs__item"><a href="#">Home </a> </li>
-                <li class="breadcrumbs__item">Plumbing</li>
-            </ul>
+        <div class="scrollup icon-angle-right">
            
         </div>
-      
-  </div>
+        <header class="header">
+            <div class="container">
+       <div class="header__inner">
+        <a href="index.html" class="header__logo">
+            <img src="images/Logo.png" alt="">
+        </a>
+           <div class="hamburger hamburger--spin">
+               <div class="hamburger-box">
+                 <div class="hamburger-inner"></div>
+               </div>
+             </div>
+           <!-- <div class="header-burger ">
+               <span></span>
+           </div>   -->
+                               
+           <nav class="header__menu">
+               <ul class="header__list">
+                   <li ><a  href="index.html"> Главная </a></li>
+                   <li ><a  href="aboutUs.html">  О нас </a></li>
+                   <li class="header__dropdown"><span class="active">Услуги</span>
+                       <div class="header__services-menu ">
+                           <ul>
+                               <li><a href="services.html">Все</a></li>
+                               <li><a href="engine.html">Ремонт двигателей</a></li>
+                               <li><a href="electrical.html">Электрика</a></li>
+                               <li><a href="plumbing.html">Сантехника</a></li>
+                               <li><a href="wallPaint.html">Покраска стен</a></li>
+                               <li><a href="home.html">Ремонт зданий</a></li>
+                               <li><a href="installation.html">Установка</a></li>
+                               <li><a href="garden.html">Реставрация </a></li>
+                           </ul>
+                       </div>
+                   </li>
+                   <div class="header__accordeon panel">
+                       <ul>
+                           <li><a href="services.html">Все</a></li>
+                               <li><a href="engine.html">Ремонт двигателей</a></li>
+                               <li><a href="electrical.html">Электрика</a></li>
+                               <li><a href="plumbing.html">Водопровод</a></li>
+                               <li><a href="wallPaint.html">Покраска стен</a></li>
+                               <li><a href="home.html">Ремонт зданий</a></li>
+                               <li><a href="installation.html">Установка</a></li>
+                               <li><a href="garden.html">Реставрация </a></li>
+                       </div>
+                   </li>
+                   <li><a href="projects.html">Проекты</a></li>
+                  
+                   <li><a  href="blog.html">Блог</a></li>
+                   <li><a  href="FAQ.html">Вопросы</a></li>
+                   <li><a href="contact.html">Контакты</a></li>
+               </ul>
+           </nav>
+           <div class="header__search ">
+               <form>
+                   <input class="header__search-input" type="text" placeholder="Поиск">
+                   <button class="header__search-button"  type="submit"></button>
+               </form>
+           </div>
+       </div>
+   </div>
+</header>
+
+<div class="breadcrumbs " style=" background-image: url(images/services/plumbing.jpg);">
+
+    <div class="breadcrumbs__wrapper">
+          <div class="breadcrumbs__title">Услуги</div>
+              <ul class="breadcrumbs__list">
+                  <li class="breadcrumbs__item"><a href="index.html">Главная </a> </li>
+                  <li class="breadcrumbs__item"><a href="services.html">Услуги </a> </li>
+                  <li class="breadcrumbs__item">Сантехника</li>
+              </ul>
+             
+          </div>
+          </div>
 <section class="services">
     <div class="container">
         <div class="services__inner">
@@ -69,26 +98,26 @@
            
                     <div class="tab services__tab">
                        <ul>
-                        <li class="services__tabs-item "><a href="engine.html" class="services__tabs-link">Engine Repair</a></li>
-                        <li class="services__tabs-item electrical"><a href="electrical.html" class="services__tabs-link ">Electrical</a></li>
-                        <li class="services__tabs-item plumbing active"><a href="plumbing.html" class="services__tabs-link ">Plumbing</a></li>
-                        <li class="services__tabs-item wallPaint" ><a href="wallPaint.html" class="services__tabs-link ">Wall Paint</a></li>
-                        <li class="services__tabs-item home"><a href="home.html" class="services__tabs-link ">Home Maintenance</a></li>
-                        <li class="services__tabs-item installation"><a href="installation.html" class="services__tabs-link ">Installation</a></li>
-                        <li class="services__tabs-item garden "><a href="garden.html" class="services__tabs-link ">Garden Repair</a></li>
+                        <li class="services__tabs-item "><a href="engine.html" class="services__tabs-link">Ремонт двигатлей</a></li>
+                        <li class="services__tabs-item electrical "><a href="electrical.html" class="services__tabs-link ">Электрика</a></li>
+                        <li class="services__tabs-item plumbing active"><a href="plumbing.html" class="services__tabs-link ">Сантехника</a></li>
+                        <li class="services__tabs-item wallPaint" ><a href="wallPaint.html" class="services__tabs-link ">Покраска стен</a></li>
+                        <li class="services__tabs-item home"><a href="home.html" class="services__tabs-link ">Ремонт дома</a></li>
+                        <li class="services__tabs-item installation"><a href="installation.html" class="services__tabs-link ">Установка</a></li>
+                        <li class="services__tabs-item garden "><a href="garden.html" class="services__tabs-link ">Дизайн</a></li>
                        </ul>
              </div>
 <div class="services__ads">
     <div class="services__ads-title">
-        Your Ads
+       Ваша реклама
     </div>
 </div>
 <div class="services__contact" >
     <div class="services__contact-title">
-        Contact Us
+       Контакты
     </div>
     <div class="services__contact-item icon-map-marker">
-        Auhandy Tower, New York, NY 10013, USA
+        Auhandy, Галерея Краснодар
     </div>
     <div class="services__contact-item icon-mobile-phone">
         (+1) 23 567 8596
@@ -97,8 +126,8 @@
         info@example.com
     </div>
     <div class="services__contact-item icon-clock-o">
-        Weekdays: 9:00am - 6:00pm
-       <span> Sat - Sun : 10:00am - 5:00pm</span>
+       Будни: 9:00-18:00
+       <span> Выходные: 10:00 - 17:00</span>
     </div>
 </div>
             
@@ -106,39 +135,40 @@
             <div class="services__body">
               
               <div class="services__body-content">
-                       <div class="services__body-img" style=" background-image: url(images/engine-bg.jpg);">
+                       <div class="services__body-img" style=" background-image: url(images/index.html/plumber.jpg);">
                           
                        </div>
                        <div class="services__body-title">
-                        Pellentesque efficitur risus vel libero.
+                        Услуги сантехника в день обращения
                        </div>
                        <div class="services__body-text">
-                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras vitae pharetra massa. Praesent sed nunc tortor. Proin sed sem pellentesque, aliquet dui eu, aliquet nunc. Etiam ac elit eu libes pharetra sit amet vel nibh. Integer metus augue, fermentum eu est in, porttitor tincidunt arcu. Curabitur cursus pellente q blandit. Suspendisse placerat sit amet diam at facilisis. In eleifend ligula non odio pulvinar congue. Rivamus tinc ac eleif mollis. Nulla placerat, sem id bibendum faucibus, ante metus porta nisl, non pretium odio quam sed magna. In molestie vel odio nec faucibus. Integer viverra non risus ut viverra. Sed egestas at ipsum a consequat.
+                        Срочно требуются услуги сантехника? Обратитесь в нашу компанию – и мастер будет у вас дома уже через 30 минут. Он выполнит все необходимые работы: устранит протечки, засоры, установит смеситель, сантехническое оборудование, отремонтирует душевую кабину – и все это в день обращения. У нас работают сантехники с опытом от 7 лет и более, поэтому они легко справляются с задачами любой сложности: будь то поломка сантехнических изделий или установка нового оборудования. Обратитесь к нам прямо сейчас, и вы сможете убедиться в этом сами!
                        </div>
                        <div class="services__body-title">
-                        Sed the feugiat enim tincidunt.
+                        Услуги сантехника со своим или с вашим материалом
+
                     </div>
                     <div class="services__body-text">
-                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras vitae pharetra massa. Praesent sed nunc tortor. Proin sed sem pellentesque, aliquet dui eu, aliquet nunc. Etiam ac elit eu libes pharetra sit amet vel nibh. Integer metus augue, fermentum eu est in, porttitor tincidunt arcu.
+                        Хотите, чтобы работы были выполнены срочно, но, к сожалению, не успели ничего закупить для ремонта или монтажа? Не отчаивайтесь – наши сантехники привезут все необходимое с собой. На складе нашей компании есть расходные материалы, сантехнические изделия ведущих производителей, которые мы предлагаем по выгодным ценам. Вся продукция сертифицирована и соответствует высоким стандартам качества. Если все необходимое уже закуплено - мастера нашего сервиса будут работать с материалами заказчика.
                     </div>
               </div>
               <div class="services__body-title services__gallery-title">
-                Gallery 
+              Галерея
               </div>
               <div class="services__body-gallery">
+                <div class="services__gallery-images">
+                    <img src="images/services/electrical.jpg" alt="">
+                    <a href="images/services/electrical.jpg " data-fancybox="images"class="services__gallery-images--hover icon-arrows"> </a >
+                  </div>
                   <div class="services__gallery-images">
-                      <img src="images/services-gallery1.jpg" alt="">
-                      <a href="images/services-gallery1.jpg " data-fancybox="images"class="services__gallery-images--hover icon-arrows"> </a >
+                      <img src="images/services/installation.jpg" alt="">
+                      <a href="images/services/installation.jpg " data-fancybox="images"class="services__gallery-images--hover icon-arrows"> </a >
                     </div>
                     <div class="services__gallery-images">
-                        <img src="images/services-gallery2.jpg" alt="">
-                        <a href="images/services-gallery2.jpg " data-fancybox="images"class="services__gallery-images--hover icon-arrows"> </a >
-                      </div>
-                      <div class="services__gallery-images">
-                        <img src="images/services-gallery3.jpg" alt="">
-                        <a href="images/services-gallery3.jpg " data-fancybox="images"class="services__gallery-images--hover icon-arrows"> </a >
-                      </div>
-              </div>
+                      <img src="images/services/engine-bg.jpg" alt="">
+                      <a href="images/services/engine-bg.jpg " data-fancybox="images"class="services__gallery-images--hover icon-arrows"> </a >
+                    </div>
+            </div>
                   </div>
 
                  
@@ -149,64 +179,64 @@
      </div> 
      <div class="footer">
     
-         <div class="footer__top">
-             <div class="container">
-      <div class="footer__top-inner">
-                    <div class="footer__contact">
-                        <div class="footer__title">
-                            Contact Us
-                        </div>
-                        <div class="footer__contact-item ">
-                            <div class="footer__contact-icon icon-mobile-phone "></div>
-                            <div class="footer__contact-text"><span>+1 23 567 8596</span>
-                         Support 24/7 Weekdays</div>
-                        </div>
-                        <div class="footer__contact-item ">
-                            <div class="footer__contact-icon icon-map-marker "></div>
-                            <div class="footer__contact-text">Auhandy Tower, New York, NY 10013, USA</div>
-                        </div>
-                        <div class="footer__contact-item ">
-                            <div class="footer__contact-icon icon-envelope-o "></div>
-                            <div class="footer__contact-text">info@example.com</div>
-                        </div>
-                        <div class="footer__contact-item ">
-                            <div class="footer__contact-icon icon-clock-o"></div>
-                            <div class="footer__contact-text">Weekdays: 09:00am - 06:00pm</div>
-                        </div>
-                    </div>
-                    <div class="footer__services">
-                        <div class="footer__title">
-                            Our Services
-                        </div>
-                        <ul class="footer__services-list">
-                            <li><a href="#">Electrical</a></li>
-                            <li><a href="#">Plumbing</a></li>
-                            <li><a href="#">Engine Repair</a></li>
-                            <li><a href="#">Repair House</a></li>
-                            <li><a href="#">Home Maintenance</a></li>
-                            <li><a href="#">Wall Paint</a></li>
-                            <li><a href="#">Installation</a></li>
-                            <li><a href="#">Garden Repairs</a></li>
-                            <li><a href="#">Soil Drilling</a></li>
-                            <li><a href="#">Support 24/7</a></li>
-                            <li><a href="#">Inspection House</a></li>
-                            <li><a href="#">Remodeling Ceiling</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer__cupon">
-                        <div class="cupon__title">
-                            Get <span>25%</span>Off 
-                        </div>
-                        <div class="cupon__subtitle">
-                            Electrical Services
-                        </div>
-                        <div class="cupon__code">
-                            Redeem Code: <span>HANDYHPY28</spa>
-                        </div>
-                    </div>
-      </div>
-            </div>
-        </div>
+        <div class="footer__top">
+            <div class="container">
+     <div class="footer__top-inner">
+                   <div class="footer__contact">
+                       <div class="footer__title">
+                          Свяжитесь с нами
+                       </div>
+                       <div class="footer__contact-item ">
+                           <div class="footer__contact-icon icon-mobile-phone "></div>
+                           <div class="footer__contact-text"><span>+1 23 567 8596</span>
+                       Поддержка 24/7</div>
+                       </div>
+                       <div class="footer__contact-item ">
+                           <div class="footer__contact-icon icon-map-marker "></div>
+                           <div class="footer__contact-text">Auhandy, Галерея Краснодар</div>
+                       </div>
+                       <div class="footer__contact-item ">
+                           <div class="footer__contact-icon icon-envelope-o "></div>
+                           <div class="footer__contact-text">info@example.com</div>
+                       </div>
+                       <div class="footer__contact-item ">
+                           <div class="footer__contact-icon icon-clock-o"></div>
+                           <div class="footer__contact-text">Часы работы: 09:00 - 06:00</div>
+                       </div>
+                   </div>
+                   <div class="footer__services">
+                       <div class="footer__title">
+                           Наши услуг
+                       </div>
+                       <ul class="footer__services-list">
+                           <li><a href="electrical.html">Электрика</a></li>
+                           <li><a href="plumbing.html">Сантехника</a></li>
+                           <li><a href="engine.html">Ремонт двигателей</a></li>
+                           <li><a href="404.html">Ремонт дома</a></li>
+                           <li><a href="home.html">Ремонт зданий</a></li>
+                           <li><a href="wallPAint.html">Покраска стен</a></li>
+                           <li><a href="installation.html">Установка</a></li>
+                           <li><a href="garden.html">Реставрация </a></li>
+                           <li><a href="404.html">Бурение почвы</a></li>
+                           <li><a href="404.html">Поддержка 24/7</a></li>
+                           <li><a href="404.html">Инспекция дома</a></li>
+                           <li><a href="404.html">Разработка дизайна</a></li>
+                       </ul>
+                   </div>
+                   <div class="footer__cupon">
+                       <div class="cupon__title">
+                           Получите <span>25%</span>скидку
+                       </div>
+                       <div class="cupon__subtitle">
+                           Услуги электрика
+                       </div>
+                       <div class="cupon__code">
+                           Купон <span>HANDYHPY28</spa>
+                       </div>
+                   </div>
+     </div>
+           </div>
+       </div>
             <div class="footer__bottom">
                 <div class="container"><div class="footer__bottom-text">Copyright © 2018 <span>Auhandy.</span> Get The Theme</div></div>
             </div>

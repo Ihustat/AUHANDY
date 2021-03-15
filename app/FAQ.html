@@ -6,60 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel = "shortcut icon" href = "images/favicon.png" type = "image/png">
     <link rel="stylesheet" href="css/hamburgers.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <div class="wrapper">
      <div class="content">
-
-<header class="header">
-    <div class="container">
-        <div class="header__inner">
-            <div class="header__logo">
-                <img src="images/Logo.png" alt="">
-            </div>
-            <div class="hamburger hamburger--spin">
-                <div class="hamburger-box">
-                  <div class="hamburger-inner"></div>
-                </div>
-              </div>
-            <!-- <div class="header-burger ">
-                <span></span>
-            </div>   -->
-                                
-            <nav class="header__menu">
-                <ul class="header__list">
-                    <li><a href="#">    Home </a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header__search ">
-                <form>
-                    <input class="header__search-input" type="text" placeholder="search">
-                    <button class="header__search-button"  type="submit"></button>
-                </form>
-            </div>
+        <div class="scrollup icon-angle-right">
+           
         </div>
-    </div>
+        <header class="header">
+            <div class="container">
+       <div class="header__inner">
+        <a href="index.html" class="header__logo">
+            <img src="images/Logo.png" alt="">
+        </a>
+           <div class="hamburger hamburger--spin">
+               <div class="hamburger-box">
+                 <div class="hamburger-inner"></div>
+               </div>
+             </div>
+           <!-- <div class="header-burger ">
+               <span></span>
+           </div>   -->
+                               
+           <nav class="header__menu">
+               <ul class="header__list">
+                   <li ><a  href="index.html"> Главная </a></li>
+                   <li ><a  href="aboutUs.html">  О нас </a></li>
+                   <li class="header__dropdown"><span>Услуги</span>
+                       <div class="header__services-menu ">
+                           <ul>
+                               <li><a href="services.html">Все</a></li>
+                               <li><a href="engine.html">Ремонт двигателей</a></li>
+                               <li><a href="electrical.html">Электрика</a></li>
+                               <li><a href="plumbing.html">Сантехника</a></li>
+                               <li><a href="wallPaint.html">Покраска стен</a></li>
+                               <li><a href="home.html">Ремонт зданий</a></li>
+                               <li><a href="installation.html">Установка</a></li>
+                               <li><a href="garden.html">Реставрация </a></li>
+                           </ul>
+                       </div>
+                   </li>
+                   <div class="header__accordeon panel">
+                       <ul>
+                           <li><a href="services.html">Все</a></li>
+                               <li><a href="engine.html">Ремонт двигателей</a></li>
+                               <li><a href="electrical.html">Электрика</a></li>
+                               <li><a href="plumbing.html">Водопровод</a></li>
+                               <li><a href="wallPaint.html">Покраска стен</a></li>
+                               <li><a href="home.html">Ремонт зданий</a></li>
+                               <li><a href="installation.html">Установка</a></li>
+                               <li><a href="garden.html">Реставрация </a></li>
+                       </div>
+                   </li>
+                   <li><a href="projects.html">Проекты</a></li>
+                  
+                   <li><a  href="blog.html">Блог</a></li>
+                   <li><a class="active"  href="FAQ.html">Вопросы</a></li>
+                   <li><a href="contact.html">Контакты</a></li>
+               </ul>
+           </nav>
+           <div class="header__search ">
+               <form>
+                   <input class="header__search-input" type="text" placeholder="Поиск">
+                   <button class="header__search-button"  type="submit"></button>
+               </form>
+           </div>
+       </div>
+   </div>
 </header>
 
-<div class="breadcrumbs " style=" background-image: url(images/breadcrumbs-engine.jpg);">
+<div class="breadcrumbs " style=" background-image: url(images/breadcrumbs/faq.jpg);">
 
     <div class="breadcrumbs__wrapper">
-          <div class="breadcrumbs__title">FAQ</div>
+          <div class="breadcrumbs__title">Вопросы</div>
               <ul class="breadcrumbs__list">
-                  <li class="breadcrumbs__item"><a href="#">Home </a> </li>
-                  <li class="breadcrumbs__item">FAQ</li>
+                  <li class="breadcrumbs__item"><a href="index.html">Главная </a> </li>
+                  <li class="breadcrumbs__item">Вопросы </li>
               </ul>
              
           </div>
-        </div>
+          </div>
 <section class="faq">
     <div class="container">
         <div class="faq__inner">
@@ -70,71 +100,75 @@
                         <div class="faq__accordion-svg faq__accordion-svg--block"><svg xmlns="http://www.w3.org/2000/svg"  width="20" height="24" viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><path d="M22 24h-20v-24h14l6 6v18zm-7-23h-12v22h18v-16h-6v-6zm3 15v1h-12v-1h12zm0-3v1h-12v-1h12zm0-3v1h-12v-1h12zm-2-4h4.586l-4.586-4.586v4.586z"/></svg></div>
                         <div class="faq__accordion-svg faq__accordion-svg--arrow"><svg xmlns="http://www.w3.org/2000/svg"
                          width="20" height="20" viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg></div>
-                    <button class="accordion">Are you licensed?</button>
+                    <button class="accordion">Я планирую ремонт квартиры с чего мне начинать?</button>
                 </div>
                     <div class="panel">
-                      <p>Curabitur accumsan turpis non iaculis sodales. Mauris sit amet odio in vestiulu volutpat. Nam a ultricies ante. Pellentesque consectetur nisi ac lacia sodales. Etiam cursus id enim a malesuada. Nulla feugiat velit in  dapibus aliquet. Quisque dignissim a nunc eu cursus malesuada est eget purus maximus.</p>
+                      <p>Сначала вы выбираете время, когда вам будет удобно, чтобы к вам подъехал замерщик.
+
+                        На снятие замеров уходит примерно час. Затем по электронной почте вам будет выслана смета. С договором вы можете ознакомиться у нас на сайте. После согласования сроков проведения работ, цены за работу и черновые материалы, оговаривается дата начала работ. Договор можно подписать заранее или во время начала производства работ, как будет удобно для Заказчика.</p>
                     </div>
     </div>
     <div class="faq__accordion-item">
         <div class="faq__accordion-title">
-             <div class="faq__accordion-svg faq__accordion-svg--block"><svg xmlns="http://www.w3.org/2000/svg"  width="20" height="24" viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><path d="M22 24h-20v-24h14l6 6v18zm-7-23h-12v22h18v-16h-6v-6zm3 15v1h-12v-1h12zm0-3v1h-12v-1h12zm0-3v1h-12v-1h12zm-2-4h4.586l-4.586-4.586v4.586z"/></svg></div>
+             <div class="faq__accordion-svg faq__accordion-svg--block"><svg xmlns="http://www.w3.org/2000/svg"  width="20" height="24" viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><path d="M22 4h-20c-1.104 0-2 .896-2 2v12c0 1.104.896 2 2 2h20c1.104 0 2-.896 2-2v-12c0-1.104-.896-2-2-2zm0 13.5c0 .276-.224.5-.5.5h-19c-.276 0-.5-.224-.5-.5v-6.5h20v6.5zm0-9.5h-20v-1.5c0-.276.224-.5.5-.5h19c.276 0 .5.224.5.5v1.5zm-9 6h-9v-1h9v1zm-3 2h-6v-1h6v1zm10-2h-3v-1h3v1z"/></svg></div>
              <div class="faq__accordion-svg faq__accordion-svg--arrow"><svg xmlns="http://www.w3.org/2000/svg"
               width="20" height="20" viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg></div>
-         <button class="accordion">Are you licensed?</button>
+         <button class="accordion">Сколько стоит комплексный ремонт?</button>
      </div>
          <div class="panel">
-           <p>Curabitur accumsan turpis non iaculis sodales. Mauris sit amet odio in vestiulu volutpat. Nam a ultricies ante. Pellentesque consectetur nisi ac lacia sodales. Etiam cursus id enim a malesuada. Nulla feugiat velit in  dapibus aliquet. Quisque dignissim a nunc eu cursus malesuada est eget purus maximus.</p>
+           <p>Самый популярный вопрос, который Заказчики задают нам.
+
+            Ответить на него можно только после консультации с нашим специалистом, который по приезду к Вам произведет все необходимые замеры, оценит состояние помещения, и составит смету на работы.</p>
          </div>
 </div>
 <div class="faq__accordion-item">
     <div class="faq__accordion-title">
-         <div class="faq__accordion-svg faq__accordion-svg--block"><svg xmlns="http://www.w3.org/2000/svg"  width="20" height="24" viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><path d="M22 24h-20v-24h14l6 6v18zm-7-23h-12v22h18v-16h-6v-6zm3 15v1h-12v-1h12zm0-3v1h-12v-1h12zm0-3v1h-12v-1h12zm-2-4h4.586l-4.586-4.586v4.586z"/></svg></div>
+         <div class="faq__accordion-svg faq__accordion-svg--block"><svg xmlns="http://www.w3.org/2000/svg"  width="20" height="24" viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><path d="M18.513 7.119c.958-1.143 1.487-2.577 1.487-4.036v-3.083h-16v3.083c0 1.459.528 2.892 1.487 4.035l3.087 3.68c.566.677.57 1.625.009 2.306l-3.13 3.794c-.937 1.136-1.453 2.555-1.453 3.995v3.107h16v-3.107c0-1.44-.517-2.858-1.453-3.994l-3.13-3.794c-.562-.681-.558-1.629.009-2.306l3.087-3.68zm-.513-4.12c0 1.101-.363 2.05-1.02 2.834l-.978 1.167h-8.004l-.978-1.167c-.66-.785-1.02-1.736-1.02-2.834h12zm-.996 15.172c.652.791.996 1.725.996 2.829h-1.061c-1.939-2-4.939-2-4.939-2s-3 0-4.939 2h-1.061c0-1.104.344-2.039.996-2.829l3.129-3.793c.342-.415.571-.886.711-1.377h.164v1h2v-1h.163c.141.491.369.962.711 1.376l3.13 3.794zm-6.004-1.171h2v1h-2v-1zm0-2h2v1h-2v-1z"/></svg></div>
          <div class="faq__accordion-svg faq__accordion-svg--arrow"><svg xmlns="http://www.w3.org/2000/svg"
           width="20" height="20" viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg></div>
-     <button class="accordion">Are you licensed?</button>
+     <button class="accordion">Какие сроки проведения ремонта квартиры?</button>
  </div>
      <div class="panel">
-       <p>Curabitur accumsan turpis non iaculis sodales. Mauris sit amet odio in vestiulu volutpat. Nam a ultricies ante. Pellentesque consectetur nisi ac lacia sodales. Etiam cursus id enim a malesuada. Nulla feugiat velit in  dapibus aliquet. Quisque dignissim a nunc eu cursus malesuada est eget purus maximus.</p>
+       <p>Срок проведения ремонтных работ зависит от категории ремонта и от его объема.</p>
      </div>
 </div>
 <div class="faq__accordion-item">
     <div class="faq__accordion-title">
-         <div class="faq__accordion-svg faq__accordion-svg--block"><svg xmlns="http://www.w3.org/2000/svg"  width="20" height="24" viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><path d="M22 24h-20v-24h14l6 6v18zm-7-23h-12v22h18v-16h-6v-6zm3 15v1h-12v-1h12zm0-3v1h-12v-1h12zm0-3v1h-12v-1h12zm-2-4h4.586l-4.586-4.586v4.586z"/></svg></div>
+         <div class="faq__accordion-svg faq__accordion-svg--block"><svg xmlns="http://www.w3.org/2000/svg"  width="20" height="24" viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><path d="M24 15.01c-6.857 3.941-12.399-1.424-19.5 5.99l-4.5-9.97 1.402-1.463 3.807 8.406-.002.007c7.445-5.595 11.195-1.176 18.109-4.563.294.648.565 1.332.684 1.593zm-8.904-6.21c-.47-1.095-1.783-1.827-2.932-1.636-1.15.191-1.702 1.233-1.231 2.328.498 1.155 1.921 1.895 3.094 1.603 1.038-.257 1.517-1.252 1.069-2.295zm-1.448 1.363l.104.229-.218.045-.097-.219c-.225.041-.482.035-.719-.027l-.065-.387c.195.03.438.058.623.02l.125-.041c.221-.109.153-.387-.176-.453-.244-.054-.893-.014-1.135-.552-.136-.304-.035-.621.356-.766l-.108-.239.217-.045.104.229c.159-.026.345-.036.563-.017l.087.383c-.169-.021-.353-.041-.512-.008l-.06.016c-.309.082-.21.375.064.446.453.105.994.139 1.208.612.172.385-.028.648-.361.774zm5.644-4.817l2.417 5.211c-4.279 2.284-9.871-.34-15 2.501l-2.313-5.065c3.873-2.694 9.197-.035 14.896-2.647zm.902-2.346c-6.179 4.004-13.007-.318-17.951 4.454l3.765 8.22c5.298-4.492 12.519-.238 17.952-4.455l-3.766-8.219z"/></svg></div>
          <div class="faq__accordion-svg faq__accordion-svg--arrow"><svg xmlns="http://www.w3.org/2000/svg"
           width="20" height="20" viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg></div>
-     <button class="accordion">Are you licensed?</button>
+     <button class="accordion">Берете ли Вы аванс ?</button>
  </div>
      <div class="panel faq-panel">
-       <p>Curabitur accumsan turpis non iaculis sodales. Mauris sit amet odio in vestiulu volutpat. Nam a ultricies ante. Pellentesque consectetur nisi ac lacia sodales. Etiam cursus id enim a malesuada. Nulla feugiat velit in  dapibus aliquet. Quisque dignissim a nunc eu cursus malesuada est eget purus maximus.</p>
+       <p>Аванс берется на преобретение черновых материалов, сумма аванса указана в договоре. Далее мы используем поэтапную схему оплаты по факту сделанных работ. Этапы работ оговариваются при заключении договора.</p>
      </div>
 </div>
 <div class="faq__accordion-item">
     <div class="faq__accordion-title">
-         <div class="faq__accordion-svg faq__accordion-svg--block"><svg xmlns="http://www.w3.org/2000/svg"  width="20" height="24" viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><path d="M22 24h-20v-24h14l6 6v18zm-7-23h-12v22h18v-16h-6v-6zm3 15v1h-12v-1h12zm0-3v1h-12v-1h12zm0-3v1h-12v-1h12zm-2-4h4.586l-4.586-4.586v4.586z"/></svg></div>
+         <div class="faq__accordion-svg faq__accordion-svg--block"><svg xmlns="http://www.w3.org/2000/svg"  width="20" height="24" viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><path d="M15 12c0 1.654-1.346 3-3 3s-3-1.346-3-3 1.346-3 3-3 3 1.346 3 3zm9-.449s-4.252 8.449-11.985 8.449c-7.18 0-12.015-8.449-12.015-8.449s4.446-7.551 12.015-7.551c7.694 0 11.985 7.551 11.985 7.551zm-7 .449c0-2.757-2.243-5-5-5s-5 2.243-5 5 2.243 5 5 5 5-2.243 5-5z"/></svg></div>
          <div class="faq__accordion-svg faq__accordion-svg--arrow"><svg xmlns="http://www.w3.org/2000/svg"
           width="20" height="20" viewBox="0 0 24 24" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"><path d="M11 2.206l-6.235 7.528-.765-.645 7.521-9 7.479 9-.764.646-6.236-7.53v21.884h-1v-21.883z"/></svg></div>
-     <button class="accordion">Are you licensed?</button>
+     <button class="accordion">Можно ли увидеть Вашу работу на объекте?</button>
  </div>
      <div class="panel">
-       <p>Curabitur accumsan turpis non iaculis sodales. Mauris sit amet odio in vestiulu volutpat. Nam a ultricies ante. Pellentesque consectetur nisi ac lacia sodales. Etiam cursus id enim a malesuada. Nulla feugiat velit in  dapibus aliquet. Quisque dignissim a nunc eu cursus malesuada est eget purus maximus.</p>
+       <p>Мы может предложить вам посетить объекты, на которых ведутся ремонтные работы и визуально оценить качество произведенных работ, «пощупать руками» поверхность стен. Конечно, посетить возможно не все объекты, а лишь те где есть договоренность с их владельцем.</p>
      </div>
 </div>
             </div>
             <div class="faq__form">
 <div class="faq__form-title">
-    Take a Quote
+    Узнайте цену
 </div>
 <div class="faq__form-text">
-    Morbi sagittis lacus sit amet ante posuere, sit amet fermentum nibh rutrum. Donec hendrerit lobortis ex, vel porta mauris efficitur.
+   Узнайте цену на работу заранее, просто оставив Характеристики в Комментарии
 </div>
     <div class="faq__form-form">
         <form>
-            <input class="faq__form-name" type="text" placeholder="Your Name" required>
-            <input class="faq__form-mail" type="text" placeholder="Your Email" required>
-            <input type="text" placeholder="Phone Number" required>
-            <textarea placeholder="Comments"></textarea>
-            <button type="submit">Submit</button>
+            <input class="faq__form-name" type="text" placeholder="Имя" required>
+            <input class="faq__form-mail" type="text" placeholder="Почта" required>
+            <input type="text" placeholder="Номер телефона" required>
+            <textarea placeholder="Комментарии"></textarea>
+            <button type="submit">Отправить</button>
         </form>
     </div>
             </div>
@@ -146,72 +180,72 @@
      </div> 
      <div class="footer">
     
-         <div class="footer__top">
-             <div class="container">
-      <div class="footer__top-inner">
-                    <div class="footer__contact">
-                        <div class="footer__title">
-                            Contact Us
-                        </div>
-                        <div class="footer__contact-item ">
-                            <div class="footer__contact-icon icon-mobile-phone "></div>
-                            <div class="footer__contact-text"><span>+1 23 567 8596</span>
-                         Support 24/7 Weekdays</div>
-                        </div>
-                        <div class="footer__contact-item ">
-                            <div class="footer__contact-icon icon-map-marker "></div>
-                            <div class="footer__contact-text">Auhandy Tower, New York, NY 10013, USA</div>
-                        </div>
-                        <div class="footer__contact-item ">
-                            <div class="footer__contact-icon icon-envelope-o "></div>
-                            <div class="footer__contact-text">info@example.com</div>
-                        </div>
-                        <div class="footer__contact-item ">
-                            <div class="footer__contact-icon icon-clock-o"></div>
-                            <div class="footer__contact-text">Weekdays: 09:00am - 06:00pm</div>
-                        </div>
-                    </div>
-                    <div class="footer__services">
-                        <div class="footer__title">
-                            Our Services
-                        </div>
-                        <ul class="footer__services-list">
-                            <li><a href="#">Electrical</a></li>
-                            <li><a href="#">Plumbing</a></li>
-                            <li><a href="#">Engine Repair</a></li>
-                            <li><a href="#">Repair House</a></li>
-                            <li><a href="#">Home Maintenance</a></li>
-                            <li><a href="#">Wall Paint</a></li>
-                            <li><a href="#">Installation</a></li>
-                            <li><a href="#">Garden Repairs</a></li>
-                            <li><a href="#">Soil Drilling</a></li>
-                            <li><a href="#">Support 24/7</a></li>
-                            <li><a href="#">Inspection House</a></li>
-                            <li><a href="#">Remodeling Ceiling</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer__cupon">
-                        <div class="cupon__title">
-                            Get <span>25%</span>Off 
-                        </div>
-                        <div class="cupon__subtitle">
-                            Electrical Services
-                        </div>
-                        <div class="cupon__code">
-                            Redeem Code: <span>HANDYHPY28</spa>
-                        </div>
-                    </div>
-      </div>
-            </div>
-        </div>
-            <div class="footer__bottom">
-                <div class="container"><div class="footer__bottom-text">Copyright © 2018 <span>Auhandy.</span> Get The Theme</div></div>
-            </div>
-    
-          
-         
-      
+        <div class="footer__top">
+            <div class="container">
+     <div class="footer__top-inner">
+                   <div class="footer__contact">
+                       <div class="footer__title">
+                          Свяжитесь с нами
+                       </div>
+                       <div class="footer__contact-item ">
+                           <div class="footer__contact-icon icon-mobile-phone "></div>
+                           <div class="footer__contact-text"><span>+1 23 567 8596</span>
+                       Поддержка 24/7</div>
+                       </div>
+                       <div class="footer__contact-item ">
+                           <div class="footer__contact-icon icon-map-marker "></div>
+                           <div class="footer__contact-text">Auhandy, Галерея Краснодар</div>
+                       </div>
+                       <div class="footer__contact-item ">
+                           <div class="footer__contact-icon icon-envelope-o "></div>
+                           <div class="footer__contact-text">info@example.com</div>
+                       </div>
+                       <div class="footer__contact-item ">
+                           <div class="footer__contact-icon icon-clock-o"></div>
+                           <div class="footer__contact-text">Часы работы: 09:00 - 06:00</div>
+                       </div>
+                   </div>
+                   <div class="footer__services">
+                       <div class="footer__title">
+                           Наши услуг
+                       </div>
+                       <ul class="footer__services-list">
+                           <li><a href="electrical.html">Электрика</a></li>
+                           <li><a href="plumbing.html">Сантехника</a></li>
+                           <li><a href="engine.html">Ремонт двигателей</a></li>
+                           <li><a href="404.html">Ремонт дома</a></li>
+                           <li><a href="home.html">Ремонт зданий</a></li>
+                           <li><a href="wallPAint.html">Покраска стен</a></li>
+                           <li><a href="installation.html">Установка</a></li>
+                           <li><a href="garden.html">Реставрация </a></li>
+                           <li><a href="404.html">Бурение почвы</a></li>
+                           <li><a href="404.html">Поддержка 24/7</a></li>
+                           <li><a href="404.html">Инспекция дома</a></li>
+                           <li><a href="404.html">Разработка дизайна</a></li>
+                       </ul>
+                   </div>
+                   <div class="footer__cupon">
+                       <div class="cupon__title">
+                           Получите <span>25%</span>скидку
+                       </div>
+                       <div class="cupon__subtitle">
+                           Услуги электрика
+                       </div>
+                       <div class="cupon__code">
+                           Купон <span>HANDYHPY28</spa>
+                       </div>
+                   </div>
      </div>
+           </div>
+       </div>
+           <div class="footer__bottom">
+               <div class="container"><div class="footer__bottom-text">Copyright © 2021<span>Auhandy.</span> </div></div>
+           </div>
+   
+         
+        
+     
+    </div>
     </div>
 
 

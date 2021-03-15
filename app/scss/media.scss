@@ -25,6 +25,17 @@ margin-left: 0;
 flex-basis: 50%;
     }
 }
+
+@media (max-width:1170px){
+    .reviews__item-box {
+        height: 215px;
+        padding: 20px 23px;
+    }
+    .reviews__item {
+        max-width: 313px;
+        
+    }
+}
 @media (max-width:1160px){
     .services__contact,
     .services__ads{
@@ -39,6 +50,13 @@ flex-basis: 50%;
     }
     .contacts__quote{
         margin-left: 10px;
+    }
+    .team__box{
+        flex-wrap: wrap;
+    }
+    .team__item {
+        margin-left: 10px;
+        margin-bottom: 15px;
     }
 }
 @media (max-width:1138px){
@@ -67,6 +85,25 @@ flex-basis: 50%;
     .why__content{
         width: 100%;
     }
+    .welcome__image{
+        display: none;
+    }
+    .welcome__content{
+        max-width: 100%;
+    }
+    .team__item-social{
+        bottom: 85px;
+    }
+}
+@media (max-width:1030px){
+  
+.reviews__item {
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+.reviews__inner{
+    flex-wrap: wrap;
+}
 }
 @media (max-width:1010px){
     .single-project__inner{
@@ -106,6 +143,14 @@ flex-basis: 50%;
         justify-content: center;
     }
 }
+@media (max-width:894px){
+    .our-services__slider-box{
+        width: 90%;
+    }
+    .slick-slider{
+       margin-left: 15px;
+    }
+}
 @media (max-width:890px){
 .services__body-gallery{
    flex-wrap: wrap;
@@ -129,15 +174,9 @@ flex-basis: 50%;
 .faq__accordion{
     max-width: 100%;
 }
+
 }
-@media (max-width:894px){
-    .our-services__slider-box{
-        width: 90%;
-    }
-    .slick-slider{
-       margin-left: 15px;
-    }
-}
+
 @media (max-width:887px){
 .counter__inner{
 
@@ -146,6 +185,21 @@ flex-basis: 50%;
 .counter__item{
     width: 50%;
     margin-bottom: 20px;
+}
+.welcome-tablinks {
+    width: 218px;
+    &.active{
+        width: 217px;
+    }
+}
+.team__box{
+    justify-content: center;
+}
+}
+
+@media (max-width:781px){
+.welcome__content-tags{
+columns: 1;
 }
 }
 @media (max-width:770px){
@@ -283,6 +337,14 @@ display: none;
 .contacts__quote{
     max-width: 100%;
 }
+.welcome-tabcontent__wrapper{
+    display: block;
+}
+}
+@media (max-width: 703px){
+    .reviews__inner{
+        justify-content: center;
+    }
 }
 @media (max-width: 640px){
     .expert__title{
@@ -291,6 +353,21 @@ display: none;
     .why__item{
         width: 100%;
         margin-bottom: 20px;
+    }
+    .welcome__box{
+        display: block;
+    }
+    .welcome__tabs{
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .welcome-tablinks {
+        width: 100%;
+       
+    }
+    .welcome-tablinks.active {
+       width: 50%;
     }
 }
 
@@ -536,6 +613,73 @@ display: none;
         height: 40px;
        
     }
+    .welcome {
+        padding: 40px 0 10px;
+    }
+    .welcome__title {
+        margin-bottom: 36px;
+    }
+    .welcome-tablinks {
+       
+        height: 40px;
+       
+    }
+    .welcome-tablinks.active::before {
+        right: -15px;
+        border-top: 20px solid transparent;
+        border-left: 15px solid #1c3e9b;
+        border-bottom: 20px solid transparent;
+}
+.welcome__content-title {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.welcome__content-text {
+    line-height: 21px;
+    margin-bottom: 14px;
+}
+.welcome__content-button {
+    width: 100%;
+}
+.welcome__content-tags {
+    margin-bottom: 7px;
+}
+.team {
+    padding: 0px 0 20px;
+}
+.team__title {
+    margin-bottom: 30px;
+}
+.reviews__title {
+  
+    margin-bottom: 25px;
+}
+.reviews{
+    padding-bottom: 30px;
+}
+.page-404{
+    padding:30px 0 35px;
+    
+    &__number{
+        font-size: 110px;
+        line-height: 110px;
+        font-weight: 900;
+        color: $blue;
+        margin-bottom: 25px;
+    }
+    &__title{
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    &__link{
+        background-color: $yellow;
+        text-align: center;
+        padding: 10px;
+        color: #fff;
+        width: 100%;
+        height: 50px;
+    }
+}
 }
 @media (max-width:490px){
 .expert, .expert__wrapper{
@@ -599,6 +743,17 @@ display: none;
 }
 .counter__item{
     width: 100%;
+}
+.reviews__item-box {
+    height: 253px;
+
+}
+.reviews__item-box::before {
+    border: 16px solid transparent;
+    border-left: 16px solid #1c3e9b;
+    border-top: 16px solid #1c3e9b;
+    bottom: -31px;
+ 
 }
 }
 @media (max-width:330px){
